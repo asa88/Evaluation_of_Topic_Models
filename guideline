@@ -1,0 +1,16 @@
+Things to do
+-----------------------
+
+
+for each datapoint in DATA
+	Calculate gM  	#Projection Graph
+		find all related features
+	Calculate gS 	#Spanning Graph
+		find all related features
+end
+
+
+spanning Graph
+	
+
+
