@@ -14,9 +14,10 @@ Created on Mar 18, 2014
 import re
 import networkx as nx
 
-import sys
-sys.path.append('..')
-sys.path.append('/usr/lib/graphviz/python/')
+import matplotlib.pyplot as plt
+#import sys
+#sys.path.append('..')
+#sys.path.append('/usr/lib/graphviz/python/')
 #sys.path.append('/usr/lib64/graphviz/python/')
 
 
@@ -25,12 +26,10 @@ class MineFeatures(object):
     '''
     classdocs
     '''
-    #Graph=[]
-    #GraphEdges=defaultdict(list)
+    
     notFound=open('WordNotFound.txt','a') #file containing missing words
     Feature_file=open('Features.txt','a')
-    #topics={}  # contains topic words present in the graph and their IDs
-    matches=0 # words in Graph/Total WOrds
+    misses=0 # words in Graph/Total WOrds
    
     
     G=nx.Graph()    #BRYAN'S GRAPH
@@ -39,9 +38,7 @@ class MineFeatures(object):
     gS=nx.Graph()   # SPanning graph for topics with connector nodes
     gS_w=nx.Graph() # Spanning graph with weights (frm shortest distance)
     
-    #Gs=nx.Graph()
-    #SpanG=nx.Graph()
-    #Features
+    #Projection Features
     gM_connComp=0
     gM_sizeMaxComp=0
     gM_maxDeg=0
@@ -65,12 +62,13 @@ class MineFeatures(object):
     
     def is_empty(self,any_structure):
         if any_structure:
-           #print('Structure is not empty.')
+            #print('Structure is not empty.')
             return False
         else:
             #print('Structure is empty.')
             return True
         
+    '''Load Bryan's graph'''
     def loadGraph(self,fileObj):
         for line in fileObj:
             try:
@@ -93,12 +91,18 @@ class MineFeatures(object):
         return
         
     def updateSpanningFeatures(self):
-        
-        #Avg,Min,Max Degree Feature
+        #reintizalize all spanning feature
+        self.gS_avgMSTWeight=0;self.gS_RatioC=0
+        self.gS_MaxDegreeM=0;self.gS_MaxDegreeC=0
+        self.gS_AvgDegree=0;self.gS_Density=0
+         
+        #Avg,Max Degree of orignal and connector nodes feature
         neighbours=0.0
         for node in self.gS.nodes():
             temp=self.gS.neighbors(node)
             neighbours+=len(temp)
+            
+            #check if node is orignal
             if self.gM.has_node(node):
                 if len(temp)>self.gS_MaxDegreeM:
                     self.gS_MaxDegreeM=len(temp)
@@ -111,7 +115,6 @@ class MineFeatures(object):
         # Average Weight
         weight=0.0
         edges=self.gS_w.edges(data=True)
-        #print edges
         for item in edges:
             if not self.is_empty(item[2]):
                 weight+=item[2]['weight']    
@@ -126,7 +129,8 @@ class MineFeatures(object):
         self.gS_Density=float(len(self.gS.edges()))/(noOfNodes*(noOfNodes-1))
         return
         
-        
+    ''' Projection Features'''
+    #Double checked they are working right :)
     def calc_ProjFeatures(self):
         #Add edges to projection Graph
         for node in self.gM.nodes():
@@ -137,56 +141,60 @@ class MineFeatures(object):
                         self.gM.add_edge(node,item)
                     except:
                         pass
-        #Calc features
-        closed=[]
-        self.gM_connComp=0
-        self.gM_maxDeg=0
-        self.gM_sizeMaxComp=0
+        nx.draw(self.gM)    
+        #Initialize and Calculate features
+        closed=[];self.gM_connComp=0;
+        self.gM_maxDeg=0;self.gM_sizeMaxComp=0
+        
         for node in self.gM.nodes():
             if node not in closed:
-                #st,pre,post=depth_first_search(self.gr, root=node)
-                x=nx.dfs_preorder_nodes(self.gM[node])
-                pre=list(x)
-                closed=closed + pre            
+                x=nx.dfs_preorder_nodes(self.gM,node)
+                pre=list(x)                
+                closed=closed +pre      
                 self.gM_connComp=  self.gM_connComp+1
                 if len(pre)>self.gM_sizeMaxComp:
                     self.gM_sizeMaxComp=len(pre)
-            if self.gM_maxDeg < len(self.gM.neighbors(node)):
-                    self.gM_maxDeg=len(self.gM.neighbors(node))
+            if self.gM_maxDeg < self.gM.degree(node):
+                    self.gM_maxDeg=self.gM.degree(node)
         
         #print self.gM_connComp
         #print self.gM_maxDeg
         #print self.gM_sizeMaxComp
-        #print
+
         
         return
-        
+    
+    '''Build spanning graph fro feature calculation'''
     def calc_SpanningFeatures(self):
-        print "in spanning"
         self.gS.add_nodes_from(self.gM.nodes())
         self.gS_w.add_nodes_from(self.gM.nodes())
         
         
         closed=[] 
-        sum_all=0
+        
         path_len=0
         for source in self.gM.nodes():
             for target in self.gM.nodes():
                 if source!=target and [source,target] not in closed:
                     path=nx.shortest_path(self.G, source, target)
+                    
+                    #append used nodes to closed
                     closed.append([source,target])
                     closed.append([target,source])
                     
                     self.gS.add_nodes_from(path[1:len(path)-1])
-                    path_len= len(path)-2
-                    sum_all+=path_len
+                    path_len= len(path)-1
+                    
+                    #add weighted edges to weighted graph
                     self.gS_w.add_edge(source,target,weight=path_len)
+                    
+                    #add adges to normal spanning graph
                     for i in range(0,len(path)-1):
                         try:
                             self.gS.add_edge(path[i],path[i+1])
                         except:
                             pass
-       
+        
         self.gS=nx.minimum_spanning_tree(self.gS)
         self.gS_w=nx.minimum_spanning_tree(self.gS_w)
         
@@ -201,25 +209,52 @@ class MineFeatures(object):
     def genFeatures(self,topicsObj):
         for line in topicsObj:
             self.gM.clear()
+            self.gS.clear()
+            self.gS_w.clear()
+            self.misses=0
             temp=re.findall(r"[\w']+",line)
             temp= map(str.lower,temp)
+            temp= temp[1:] # comment this line when not running fr newman Data
             for item in temp:
                 if item in self.G.nodes():   # check if item is in graph
                     self.gM.add_node(item)
-            print "Calc Features"
+                else:
+                    self.misses+=1
+            
+            '''Feature Calculation'''
             self.calc_ProjFeatures()
+            plt.figure(1,figsize=(8,8))
+            
             self.calc_SpanningFeatures()
-            print "DOne Calc Features"
-            fea=str(self.gM_connComp) + ' ' +str(self.gM_sizeMaxComp) + ' ' + str(self.gM_maxDeg)
+            
+            # layout graphs with positions using graphviz neato
+            pos=nx.graphviz_layout(self.gS,prog="neato")
+            # color nodes the same in each connected subgraph
+            C=nx.connected_component_subgraphs(self.gS)
+            nx.draw(self.gS,
+             pos,
+             node_size=500,
+             vmin=0.0,
+             vmax=1.0,
+             with_labels=True
+             )
+           
+            plt.savefig("atlas.png",dpi=75)
+            exit()
+           
+            
+            ''' Concatenate features and write to the File'''
+            fea=str(self.misses)+' '+ str(self.gM_connComp) + ' ' +str(self.gM_sizeMaxComp) + ' ' + str(self.gM_maxDeg)
             fea1= str(self.gS_avgMSTWeight) +' ' + str(self.gS_RatioC) + ' ' + str(self.gS_MaxDegreeC) + ' ' + str(self.gS_MaxDegreeM)+ ' ' +str(self.gS_AvgDegree) + ' ' + str(self.gS_Density)
             f=fea+' ' +fea1
             self.Feature_file.write(f+'\n')
+    
         print "Done writing"
         self.Feature_file.close()
        
         return
                 
-    
+    '''
     def processTopics(self,topicsObj):
         match_count=0
         word_count=0
@@ -238,101 +273,12 @@ class MineFeatures(object):
         print 'Total no of matches found ' + str(match_count) +' out of ' + str(word_count)+' for ApPress Dataset'
         self.matches= float(match_count)/word_count
         return
-        
+        '''
 
 
 
 
-# This would be the main function accessing the class
-#------------------------------------------------------------------------------------
 
-    def buildProjectionGraph(self,edgeObj):        
-        #Create the projection graph
-        for key in self.topics:
-            try:
-                self.gr.add_nodes(key)
-            except:
-                pass
-        # Create the main Graph
-        
-        
-        #Add edges to the graph
-        for line in edgeObj:
-            temp=line.split()           
-            # if the id in the graph is in the topics append projection topic graph
-            key=self.Graph[int(temp[0])]
-            sibling=self.Graph[int(temp[1])]
-            try:
-                self.G.add_edge(key,sibling)
-            except:
-                pass
-            if self.Graph[int(temp[0])] in self.topics.keys():
-                if sibling in self.topics.keys():
-                    try:
-                        self.gr.add_edge(key,sibling)
-                    except:
-                        pass
-        print "Done adding edges"         
-        return
-            
-    def ProjectionFeatures(self):
-        closed=[]
-        print "in ProjectionFeatures"
-        for node in self.gr.nodes():
-            if node not in closed:
-                #st,pre,post=depth_first_search(self.gr, root=node)
-                x=nx.dfs_preorder_nodes(self.G[node])
-                pre=list(x)
-                closed=closed + pre            
-                self.gM_connComp=  self.gM_connComp+1
-                if len(pre)>self.gM_sizeMaxComp:
-                    self.gM_sizeMaxComp=len(pre)
-            if self.gM_maxDeg < len(self.gr.neighbors(node)):
-                    self.gM_maxDeg=len(self.gr.neighbors(node))
-                    
-        print "Number of connected components"
-        print self.gM_connComp
-        print "max size of a connected components"
-        print self.gM_sizeMaxComp
-        print "max no of nodes"
-        print self.gM_maxDeg
-    
-    
-    def SpanningFeatures(self):
-      
-        closed=[]
-        count=0
-        tempG=nx.Graph()
-        for node in self.gr.nodes():
-            try:
-                tempG.add_node(node)
-            except:
-                pass
-        
-        for source in self.gr.nodes():
-            for target in self.gr.nodes():
-                if source!=target and [source,target] not in closed:
-                    path=nx.shortest_path(self.G, source, target)
-                    self.shortestPath.append(path)
-                    closed.append([source,target])
-                    closed.append([target,source])
-                    tempG.add_edge(source, target, len(path)-1)
-                    for i in range(0,len(path)):
-                        try:
-                            self.Gs.add_node(path[i])
-                            if i!=len(path):
-                                self.Gs.add_edge(path[i],path[i+1])
-                        except:
-                            pass
-        self.SpanG=nx.minimum_spanning_tree(self.Gs)
-                    
-        #Compute Features
-       
-        
-       # self.gS_avgMSTWeight=float(weight)/count
-                    
-        return
-           
             
             
             
@@ -361,7 +307,7 @@ D4=open(data_path+'Newman-data/nytimes.topics.txt','r')
 D5=open(data_path+'Newman-data/iabooks.topics.txt','r')
 
 
-Data.genFeatures(D2)
+Data.genFeatures(D4)
 '''
 #Data.loadGraphEdgesTopicEdges(f1)
 Data.buildProjectionGraph(f1)

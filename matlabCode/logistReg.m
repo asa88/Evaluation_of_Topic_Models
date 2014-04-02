@@ -1,10 +1,13 @@
 clear;
 clc;
 %addpath('/home/ankit/software/liblinear-1.93/');
-load 'apPressData.mat'   % AP Press Datatset
+%load 'apPressData.mat'   % AP Press Datatset
 %load 'econData.mat'   % Economics Datatset
+load 'iaBooksData.mat'
+%load 'nyTimesData.mat'
 
 %scale the features between 0 and 1
+
 I=Features;
 for i=1:size(Features,2),
 	scaledI = (I(:,i)-min(I(:,i))) ./ (max(I(:,i)-min(I(:,i))));
@@ -15,22 +18,26 @@ sprintf('Done Scaling Features')
 
 X=Features;
 Y=labels;
-reg_c=0.001;
-inc=5
+reg_c=100000;
+inc=0.5;
 best_c=0; max_model=0;
 cv=[]; c_val=[];
-
-for iter=-15:10,	
+classifier=6;
+for iter=-25:5,	
+%for iter=1:100
 	reg_c=2^iter;
 	%LIBLINEAR
 	%---------------------------------------------------------------------------------------
-	%options=sprintf('-s %d -c %d -v %d -q',6,reg_c,75); %liblinear  crossvalidation options
+	%options=sprintf('-s %d -c %d -v %d  -q -B 1',classifier,reg_c,10); %liblinear  crossvalidation options
+	options=sprintf('-s %d -c %d -q -B 1',classifier,reg_c);
 	
-	%model = train(Y,sparse(X), options);    %liblinear call
+	model = train(Y,sparse(X), options);    %liblinear call
+	keyboard
 	%LIBSVM
 	%---------------------------------------------------------------------------------------
-	options=sprintf('-s %d -c %d -v %d -q',0,reg_c,75); %libsvm options
-	model = svmtrain(Y,X, options);     %libsvm call
+	
+	%options=sprintf('-s %d -c %d -v %d -q',0,reg_c,75); %libsvm options
+	%model = svmtrain(Y,X, options);     %libsvm call
 	
 	if max_model<model,
 		best_c=reg_c;
