@@ -1,0 +1,11 @@
+strict graph  {
+	bin -- afghanistan	 [weight=4];
+	bin -- embassy	 [weight=6];
+	bin -- laden	 [weight=1];
+	afghanistan -- iran	 [weight=3];
+	afghanistan -- arab	 [weight=3];
+	afghanistan -- saudi	 [weight=2];
+	iranian -- arab	 [weight=1];
+	muslim -- islamic	 [weight=1];
+	arab -- islamic	 [weight=2];
+}

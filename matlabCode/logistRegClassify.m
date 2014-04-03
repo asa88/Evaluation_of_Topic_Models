@@ -2,9 +2,12 @@ clear;
 clc;
 %addpath('/home/ankit/software/liblinear-1.93/');
 %load('apPressData.mat');   % AP Press Datatset
-Ts=load('apPressData.mat');
-load('econData.mat');   % Economics Datatset
+%load('apPressData.mat');
+%load('econData.mat');   % Economics Datatset
 %Ts=load('econData.mat'); 
+
+load('iaBooksData.mat');
+Ts=load('nyTimesData.mat')
 
 %scale the Training features between 0 and 1
 I=Features;
@@ -26,24 +29,24 @@ X=Features;
 Y=labels;
 ts_data=Ts.Features;
 ts_labels=Ts.labels;
-c=65;
-classifier=5;
+c=0.2273^-1;
+classifier=6;
 best_c=0; max_model=0;
 
 
 	%LIBLINEAR
 	%---------------------------------------------------------------------------------------
 	%options=sprintf('-s %d -c %d -v %d -q',5,reg_c,75); %liblinear  crossvalidation options
-	%options=sprintf('-s %d -c %d -q',classifier,c);   %liblinear  training options
+	options=sprintf('-s %d -c %d -q -B 1 ',classifier,c);   %liblinear  training options
 
-	%model = train(Y,sparse(X), options);    %liblinear call
-	%[predicted_label, accuracy, prob_estimates] = predict(ts_labels, sparse(ts_data), model,'-b 1');
+	model = train(Y,sparse(X), options);    %liblinear call
+	[predicted_label, accuracy, prob_estimates] = predict(ts_labels, sparse(ts_data), model,'-b 1');
 	
 	%LIBSVM
 	%---------------------------------------------------------------------------------------
-	options=sprintf('-s %d -c %d -q',0,c); %libsvm options
-	model = svmtrain(Y,X, options);     %libsvm call
-	[predict_label, accuracy, prob_estimates] = svmpredict(ts_labels, ts_data, model);
+	%options=sprintf('-s %d -c %d -q',0,c); %libsvm options
+	%model = svmtrain(Y,X, options);     %libsvm call
+	%[predict_label, accuracy, prob_estimates] = svmpredict(ts_labels, ts_data, model);
 	
 	
 	

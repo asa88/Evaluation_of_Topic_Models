@@ -13,8 +13,11 @@ Created on Mar 18, 2014
 ''' Dependencies for the class'''
 import re
 import networkx as nx
+import os
 
 import matplotlib.pyplot as plt
+#import pydot
+import pygraphviz as pgv
 #import sys
 #sys.path.append('..')
 #sys.path.append('/usr/lib/graphviz/python/')
@@ -50,6 +53,18 @@ class MineFeatures(object):
     gS_MaxDegreeC=0
     gS_AvgDegree=0
     gS_Density=0
+    
+    #Shortest Path Features"
+    
+    NumNoPath=0
+    AvgSPlen=0
+    MaxSPlen=0
+    NumSP1=0
+    NumSP2=0
+    NumSP3=0
+    NumSP4=0
+    NumSP5=0
+    NumSPm=0 # for length > 5
    
 
     def __init__(self):
@@ -138,7 +153,8 @@ class MineFeatures(object):
             for item in neighbours:
                 if self.gM.has_node(item):
                     try:
-                        self.gM.add_edge(node,item)
+                        if node!=item:
+                            self.gM.add_edge(node,item)
                     except:
                         pass
         nx.draw(self.gM)    
@@ -164,6 +180,30 @@ class MineFeatures(object):
         
         return
     
+    
+    def update_SPfeatures(self,path):
+        self.AvgSPlen+=len(path)-1
+        
+        p_len=len(path)-1
+        
+        if p_len==1:
+            self.NumSP1+=1
+        if p_len==2:
+            self.NumSP2+=1
+        if p_len==3:
+            self.NumSP3+=1
+        if p_len==4:
+            self.NumSP4+=1
+        if p_len==5:
+            self.NumSP5+=1
+        if p_len>5:
+            self.NumSPm+=1
+        if p_len>self.MaxSPlen:
+            self.MaxSPlen=p_len
+                
+        return
+        
+    
     '''Build spanning graph fro feature calculation'''
     def calc_SpanningFeatures(self):
         self.gS.add_nodes_from(self.gM.nodes())
@@ -173,11 +213,14 @@ class MineFeatures(object):
         closed=[] 
         
         path_len=0
+        sp_count=0
         for source in self.gM.nodes():
             for target in self.gM.nodes():
                 if source!=target and [source,target] not in closed:
                     path=nx.shortest_path(self.G, source, target)
+                    sp_count+=1
                     
+                    self.update_SPfeatures(path)
                     #append used nodes to closed
                     closed.append([source,target])
                     closed.append([target,source])
@@ -195,9 +238,13 @@ class MineFeatures(object):
                         except:
                             pass
         
+        #update the value of average
+        self.AvgSPlen=self.AvgSPlen/sp_count
+        
         self.gS=nx.minimum_spanning_tree(self.gS)
         self.gS_w=nx.minimum_spanning_tree(self.gS_w)
         
+       
         
         #time to build spannning features
         self.updateSpanningFeatures()
@@ -205,12 +252,34 @@ class MineFeatures(object):
        
         return
         
+    def clearVars(self):
+        #clear variable for each run
+        self.gM.clear()
+        self.gS.clear()
+        self.gS_w.clear()
+        self.AvgSPlen=0;self.NumSP1=0; self.NumSP2=0;self.NumSP3=0;
+        self.NumSP4=0;self.NumSP5=0;self.NumSPm=0
+        self.MaxSPlen=0
+        
+        #Projection Features
+        self.gM_connComp=0
+        self.gM_sizeMaxComp=0
+        self.gM_maxDeg=0
+       
+        #Spanning Features
+        self.gS_avgMSTWeight=0
+        self.gS_RatioC=0
+        self.gS_MaxDegreeM=0
+        self.gS_MaxDegreeC=0
+        self.gS_AvgDegree=0
+        self.gS_Density=0
+        
+        
+        return
     
-    def genFeatures(self,topicsObj):
+    def genFeatures(self,topicsObj,path):
+        count=1
         for line in topicsObj:
-            self.gM.clear()
-            self.gS.clear()
-            self.gS_w.clear()
             self.misses=0
             temp=re.findall(r"[\w']+",line)
             temp= map(str.lower,temp)
@@ -223,57 +292,65 @@ class MineFeatures(object):
             
             '''Feature Calculation'''
             self.calc_ProjFeatures()
-            plt.figure(1,figsize=(8,8))
-            
             self.calc_SpanningFeatures()
             
-            # layout graphs with positions using graphviz neato
-            pos=nx.graphviz_layout(self.gS,prog="neato")
-            # color nodes the same in each connected subgraph
-            C=nx.connected_component_subgraphs(self.gS)
-            nx.draw(self.gS,
-             pos,
-             node_size=500,
-             vmin=0.0,
-             vmax=1.0,
-             with_labels=True
-             )
-           
-            plt.savefig("atlas.png",dpi=75)
-            exit()
+            
+            Gs=nx.to_agraph(self.gS)
+            Gm=nx.to_agraph(self.gM)
+            #add color to main nodes
+            for node in self.gM.nodes():
+                n=Gs.get_node(node)
+                n.attr['shape']='box'
+                n.attr['style']='filled'
+                n.attr['fillcolor']='turquoise'
+            
+            loc= os.getcwd()+path+'/spanning/gS_w' + str(count)+'.png'
+            loc1= os.getcwd()+path+'/projection/gM' + str(count)+'.png'    
+            Gs.layout(prog='dot') # use dot
+            Gm.layout(prog='dot') # use dot
+
+            Gs.draw(loc)
+            Gm.draw(loc1)
+            count+=1
+            
+            #nx.draw(self.gS_w,pos,node_color='b',with_labels=True,alpha =0.5)
+            # pyplot draw()(self.gM,pos)
+           # plt.savefig("atlas.png",dpi=75)
+            #exit()
+            '''Save graphs
+            
+            span=nx.to_pydot(self.gS)
+            proj=nx.to_pydot(self.gM)       
+                                 
+            loc= os.getcwd()+path+'/spanning/gS_w' + str(count)+'.png'
+            loc1= os.getcwd()+path+'/projection/gM' + str(count)+'.png'
+            try:
+                print "here"
+                span.write_png(loc)
+                proj.write_png(loc1)
+            except:
+                pass
+            count+=1
+           '''
+            
            
             
             ''' Concatenate features and write to the File'''
             fea=str(self.misses)+' '+ str(self.gM_connComp) + ' ' +str(self.gM_sizeMaxComp) + ' ' + str(self.gM_maxDeg)
             fea1= str(self.gS_avgMSTWeight) +' ' + str(self.gS_RatioC) + ' ' + str(self.gS_MaxDegreeC) + ' ' + str(self.gS_MaxDegreeM)+ ' ' +str(self.gS_AvgDegree) + ' ' + str(self.gS_Density)
-            f=fea+' ' +fea1
+            fea2=str(self.AvgSPlen)+' ' +str(self.MaxSPlen)+ ' '+str(self.NumSP1)+' '+ str(self.NumSP2)+' '+str(self.NumSP3)+' '+str(self.NumSP4)+' '+str(self.NumSP5)+' '+str(self.NumSPm)
+            f=fea+' ' +fea1 + ' '+ fea2
             self.Feature_file.write(f+'\n')
+            
+            ''' CLEAR ALL FEATURE VARS'''
+            self.clearVars()
+           
     
         print "Done writing"
         self.Feature_file.close()
        
         return
                 
-    '''
-    def processTopics(self,topicsObj):
-        match_count=0
-        word_count=0
-        for line in topicsObj:
-            line=line.rstrip('\r\n')
-            temp=re.findall(r"[\w']+",line)
-            temp= map(str.lower,temp) #convert all words to lowerccase
-            #temp= temp[1:] # comment line when running fr regular dataset
-            for item in temp:
-                word_count+=1
-                if self.G.has_node(item):
-                    match_count+=1
-                    #  self.topics[item]=self.Graph.index(item) #store id of that keywords
-                else:
-                    self.notFound.write(item+'\n')
-        print 'Total no of matches found ' + str(match_count) +' out of ' + str(word_count)+' for ApPress Dataset'
-        self.matches= float(match_count)/word_count
-        return
-        '''
 
 
 
@@ -306,8 +383,10 @@ D3=open(data_path+'music100T.txt','r')
 D4=open(data_path+'Newman-data/nytimes.topics.txt','r')
 D5=open(data_path+'Newman-data/iabooks.topics.txt','r')
 
-
-Data.genFeatures(D4)
+book_path='/Data/iaBooks/graphs/'
+news_path='/Data/NYtimes/graphs/'
+#Data.genFeatures(D5,book_path)
+Data.genFeatures(D4,news_path)
 '''
 #Data.loadGraphEdgesTopicEdges(f1)
 Data.buildProjectionGraph(f1)

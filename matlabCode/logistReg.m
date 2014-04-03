@@ -3,8 +3,8 @@ clc;
 %addpath('/home/ankit/software/liblinear-1.93/');
 %load 'apPressData.mat'   % AP Press Datatset
 %load 'econData.mat'   % Economics Datatset
-load 'iaBooksData.mat'
-%load 'nyTimesData.mat'
+%load 'iaBooksData.mat'
+load 'nyTimesData.mat'
 
 %scale the features between 0 and 1
 
@@ -18,40 +18,41 @@ sprintf('Done Scaling Features')
 
 X=Features;
 Y=labels;
-reg_c=100000;
-inc=0.5;
+reg_c=6.7981;
+inc=0.2;
 best_c=0; max_model=0;
 cv=[]; c_val=[];
 classifier=6;
-for iter=-25:5,	
-%for iter=1:100
-	reg_c=2^iter;
+%for iter=5:-5,	
+while(1/reg_c<=1.5)
+	%reg_c=2^iter;
 	%LIBLINEAR
 	%---------------------------------------------------------------------------------------
-	%options=sprintf('-s %d -c %d -v %d  -q -B 1',classifier,reg_c,10); %liblinear  crossvalidation options
+	%options=sprintf('-s %d -c %d -v %d  -q -B 1',classifier,reg_c,75); %liblinear  crossvalidation options
 	options=sprintf('-s %d -c %d -q -B 1',classifier,reg_c);
 	
 	model = train(Y,sparse(X), options);    %liblinear call
-	keyboard
+	keyboard	
 	%LIBSVM
 	%---------------------------------------------------------------------------------------
 	
 	%options=sprintf('-s %d -c %d -v %d -q',0,reg_c,75); %libsvm options
 	%model = svmtrain(Y,X, options);     %libsvm call
 	
-	if max_model<model,
-		best_c=reg_c;
+	if max_model <= model,
+		best_c=1/reg_c;
 		max_model=model;
 	end
 	cv=[cv;model];
-	c_val=[c_val;reg_c];
-	%reg_c=reg_c+inc;
+	c_val=[c_val;1/reg_c];
+	reg_c=reg_c-inc;
 	
 
-end
+%end
+	
 	figure;
 	plot(c_val,100-cv,'LineWidth',1);
-	axis([min(c_val) max(c_val) 0 100])
+	axis([min(c_val) max(c_val) min(100-cv) max(100-cv)])
 	title('Parameter Selection through cross-validation');
 	xlabel('value of C (regualriztion parameter)');
 	ylabel('Cross-validation error');
