@@ -15,9 +15,9 @@ import re
 import networkx as nx
 import os
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 #import pydot
-import pygraphviz as pgv
+#import pygraphviz as pgv
 #import sys
 #sys.path.append('..')
 #sys.path.append('/usr/lib/graphviz/python/')
@@ -106,10 +106,6 @@ class MineFeatures(object):
         return
         
     def updateSpanningFeatures(self):
-        #reintizalize all spanning feature
-        self.gS_avgMSTWeight=0;self.gS_RatioC=0
-        self.gS_MaxDegreeM=0;self.gS_MaxDegreeC=0
-        self.gS_AvgDegree=0;self.gS_Density=0
          
         #Avg,Max Degree of orignal and connector nodes feature
         neighbours=0.0
@@ -134,8 +130,7 @@ class MineFeatures(object):
             if not self.is_empty(item[2]):
                 weight+=item[2]['weight']    
         self.gS_avgMSTWeight=weight/len(edges)
-        
-                                
+            
         #ratio
         self.gS_RatioC=float(self.gS.order()-self.gM.order())/self.gM.order()
         
@@ -157,7 +152,8 @@ class MineFeatures(object):
                             self.gM.add_edge(node,item)
                     except:
                         pass
-        nx.draw(self.gM)    
+        
+           
         #Initialize and Calculate features
         closed=[];self.gM_connComp=0;
         self.gM_maxDeg=0;self.gM_sizeMaxComp=0
@@ -172,12 +168,6 @@ class MineFeatures(object):
                     self.gM_sizeMaxComp=len(pre)
             if self.gM_maxDeg < self.gM.degree(node):
                     self.gM_maxDeg=self.gM.degree(node)
-        
-        #print self.gM_connComp
-        #print self.gM_maxDeg
-        #print self.gM_sizeMaxComp
-
-        
         return
     
     
@@ -214,6 +204,7 @@ class MineFeatures(object):
         
         path_len=0
         sp_count=0
+        
         for source in self.gM.nodes():
             for target in self.gM.nodes():
                 if source!=target and [source,target] not in closed:
@@ -225,26 +216,33 @@ class MineFeatures(object):
                     closed.append([source,target])
                     closed.append([target,source])
                     
-                    self.gS.add_nodes_from(path[1:len(path)-1])
+                    # self.gS.add_nodes_from(path[1:len(path)-1])
                     path_len= len(path)-1
                     
+                                       
                     #add weighted edges to weighted graph
                     self.gS_w.add_edge(source,target,weight=path_len)
-                    
+                    '''
                     #add adges to normal spanning graph
                     for i in range(0,len(path)-1):
                         try:
                             self.gS.add_edge(path[i],path[i+1])
                         except:
                             pass
-        
+                    '''
         #update the value of average
         self.AvgSPlen=self.AvgSPlen/sp_count
         
-        self.gS=nx.minimum_spanning_tree(self.gS)
+      
+        #self.gS=nx.minimum_spanning_tree(self.gS)
         self.gS_w=nx.minimum_spanning_tree(self.gS_w)
         
-       
+        for node in self.gS_w.nodes():
+            friends=self.gS_w.neighbors(node)
+            for friend in friends:
+                path=nx.shortest_path(self.G,node,friend)
+                for i in range(0,len(path)-1):
+                        self.gS.add_edge(path[i],path[i+1])     
         
         #time to build spannning features
         self.updateSpanningFeatures()
@@ -277,6 +275,41 @@ class MineFeatures(object):
         
         return
     
+    
+    def plot_graphs(self,path,count):
+        '''Save graphs'''
+        Gs=nx.to_agraph(self.gS)
+        Gm=nx.to_agraph(self.gM)
+        Gs_w=nx.to_agraph(self.gS_w)
+        
+        #add color to main nodes
+        for node in self.gM.nodes():
+            n=Gs.get_node(node)
+            n.attr['shape']='box'
+            n.attr['style']='filled'
+            n.attr['fillcolor']='turquoise'
+            
+        #add weight to edges    
+        for edge in self.gS_w.edges(data=True):
+            ed=Gs_w.get_edge(edge[0],edge[1])
+            ed.attr['label']=edge[2]['weight'] 
+        
+        loc= os.getcwd()+path+'/spanning/gS' + str(count)+'.png'
+        loc1= os.getcwd()+path+'/projection/gM' + str(count)+'.png' 
+        loc2= os.getcwd()+path+'/spanning_w/gS_w' + str(count)+'.png' 
+        
+        Gs.layout(prog='dot') # use dot
+        Gm.layout(prog='dot') # use dot
+        Gs_w.layout(prog='dot')
+        
+        Gs.draw(loc)
+        Gm.draw(loc1)
+        Gs_w.draw(loc2)
+                  
+        return
+        
+        
+    
     def genFeatures(self,topicsObj,path):
         count=1
         for line in topicsObj:
@@ -294,57 +327,22 @@ class MineFeatures(object):
             self.calc_ProjFeatures()
             self.calc_SpanningFeatures()
             
-            
-            Gs=nx.to_agraph(self.gS)
-            Gm=nx.to_agraph(self.gM)
-            #add color to main nodes
-            for node in self.gM.nodes():
-                n=Gs.get_node(node)
-                n.attr['shape']='box'
-                n.attr['style']='filled'
-                n.attr['fillcolor']='turquoise'
-            
-            loc= os.getcwd()+path+'/spanning/gS_w' + str(count)+'.png'
-            loc1= os.getcwd()+path+'/projection/gM' + str(count)+'.png'    
-            Gs.layout(prog='dot') # use dot
-            Gm.layout(prog='dot') # use dot
-
-            Gs.draw(loc)
-            Gm.draw(loc1)
-            count+=1
-            
-            #nx.draw(self.gS_w,pos,node_color='b',with_labels=True,alpha =0.5)
-            # pyplot draw()(self.gM,pos)
-           # plt.savefig("atlas.png",dpi=75)
-            #exit()
-            '''Save graphs
-            
-            span=nx.to_pydot(self.gS)
-            proj=nx.to_pydot(self.gM)       
-                                 
-            loc= os.getcwd()+path+'/spanning/gS_w' + str(count)+'.png'
-            loc1= os.getcwd()+path+'/projection/gM' + str(count)+'.png'
-            try:
-                print "here"
-                span.write_png(loc)
-                proj.write_png(loc1)
-            except:
-                pass
-            count+=1
-           '''
-            
+            '''Plot Graphs'''
+            self.plot_graphs(path,count)
+            count+=1 
            
             
             ''' Concatenate features and write to the File'''
             fea=str(self.misses)+' '+ str(self.gM_connComp) + ' ' +str(self.gM_sizeMaxComp) + ' ' + str(self.gM_maxDeg)
-            fea1= str(self.gS_avgMSTWeight) +' ' + str(self.gS_RatioC) + ' ' + str(self.gS_MaxDegreeC) + ' ' + str(self.gS_MaxDegreeM)+ ' ' +str(self.gS_AvgDegree) + ' ' + str(self.gS_Density)
+            fea1= str(self.gS_avgMSTWeight) +' ' + str(self.gS_RatioC) + ' ' + str(self.gS_MaxDegreeM) + ' ' + str(self.gS_MaxDegreeC)+ ' ' +str(self.gS_AvgDegree) + ' ' + str(self.gS_Density)
             fea2=str(self.AvgSPlen)+' ' +str(self.MaxSPlen)+ ' '+str(self.NumSP1)+' '+ str(self.NumSP2)+' '+str(self.NumSP3)+' '+str(self.NumSP4)+' '+str(self.NumSP5)+' '+str(self.NumSPm)
             f=fea+' ' +fea1 + ' '+ fea2
             self.Feature_file.write(f+'\n')
             
             ''' CLEAR ALL FEATURE VARS'''
             self.clearVars()
-           
+            
+            
     
         print "Done writing"
         self.Feature_file.close()
@@ -385,8 +383,8 @@ D5=open(data_path+'Newman-data/iabooks.topics.txt','r')
 
 book_path='/Data/iaBooks/graphs/'
 news_path='/Data/NYtimes/graphs/'
-#Data.genFeatures(D5,book_path)
-Data.genFeatures(D4,news_path)
+Data.genFeatures(D5,book_path)
+#Data.genFeatures(D4,news_path)
 '''
 #Data.loadGraphEdgesTopicEdges(f1)
 Data.buildProjectionGraph(f1)

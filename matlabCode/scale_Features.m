@@ -1,7 +1,8 @@
 function  Features=scale_features(Features)
 
-I=Features;
+fea=Features;
 for i=1:size(Features,2),
-	scaledI = (I(:,i)-min(I(:,i))) ./ (max(I(:,i)-min(I(:,i))));
+	scaledI = (fea(:,i)-min(fea(:,i))) ./ (max(fea(:,i)-min(fea(:,i))));
+	%scaledI=(fea(:,i)-mean(fea(:,i)))./std(fea(:,1));
 	Features(:,i)=scaledI;
 end

@@ -6,8 +6,8 @@ clc;
 %load('econData.mat');   % Economics Datatset
 %Ts=load('econData.mat'); 
 
-load('iaBooksData.mat');
-Ts=load('nyTimesData.mat')
+Ts=load('iaBooksData.mat');
+load('nyTimesData.mat')
 
 %scale the Training features between 0 and 1
 I=Features;
@@ -29,7 +29,7 @@ X=Features;
 Y=labels;
 ts_data=Ts.Features;
 ts_labels=Ts.labels;
-c=0.2273^-1;
+c=0.1667^-1;
 classifier=6;
 best_c=0; max_model=0;
 

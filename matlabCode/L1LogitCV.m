@@ -1,4 +1,4 @@
-function [max_model,best_c]= L1LogitCV(X,Y,reg_c)
+function [max_model,best_c,model]= L1LogitCV(X,Y,reg_c)
 
 
 inc=0.2;
@@ -6,7 +6,7 @@ best_c=0; max_model=0;
 cv=[]; c_val=[];
 classifier=6;
 %for iter=5:-5,	
-while(1/reg_c<=1.5)
+while(1/reg_c<=1)
 	%reg_c=2^iter;
 	%LIBLINEAR
 	%---------------------------------------------------------------------------------------
@@ -38,6 +38,6 @@ end
 	ylabel('Cross-validation error');
 	
 	
-%options=sprintf('-s %d -c %d -q -B 1',classifier,best_c^-1);
-%	model = train(Y,sparse(X), options);    %liblinear call
+options=sprintf('-s %d -c %d -q -B 1',classifier,best_c^-1);
+	model = train(Y,sparse(X), options);    %liblinear call
 	
