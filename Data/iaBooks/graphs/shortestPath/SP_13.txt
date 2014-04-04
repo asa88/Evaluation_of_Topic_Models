@@ -1,0 +1,45 @@
+stone defense intelligence service 
+stone pillar burial altar 
+stone church 
+stone sarcophagus reliquary monstrance ciborium vestment 
+stone wooden stairs pulpit 
+stone church churches 
+stone church presbytery chancel 
+stone church cathedral 
+stone church chapel 
+service special decoration reliefs altars altar 
+service office location church 
+service uniform mortarboard tippet rochet vestment 
+service winter spring retreat pulpit 
+service office location church churches 
+service military memorial church presbytery chancel 
+service office location church cathedral 
+service office location church chapel 
+altar burial chantry church 
+altar pantokrator cherubim chasuble vestment 
+altar pulpit 
+altar altars chapels churches 
+altar pulpit chancel 
+altar cloister cathedral 
+altar cloister chapel 
+church churches pulpits vestments chasuble vestment 
+church presbytery pulpit 
+church churches 
+church presbytery chancel 
+church cathedral 
+church chapel 
+vestment ciborium monstrance lectern pulpit 
+vestment chasuble vestments pulpits churches 
+vestment ciborium baldacchino byzantine-style chancel 
+vestment chasuble cherubim pantokrator transfiguration basilica cathedral 
+vestment chasuble mitres rostra calvary chapel 
+pulpit presbytery church churches 
+pulpit chancel 
+pulpit presbytery cathedral 
+pulpit presbytery chapel 
+churches chapels chancel 
+churches church cathedral 
+churches church chapel 
+chancel presbytery cathedral 
+chancel presbytery chapel 
+cathedral chapel 

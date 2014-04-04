@@ -1,0 +1,45 @@
+bell curtain door porch aisle 
+bell crucifix orsanmichele nave 
+bell chimney floor porch 
+bell crucifix orsanmichele chancel 
+bell curtain door window 
+bell source memorial church 
+bell source memorial church churches 
+bell chimney tower 
+bell oaken sideboard tablet font 
+aisle nave 
+aisle porch 
+aisle transepts chancel 
+aisle porch door window 
+aisle chantry church 
+aisle chantry church churches 
+aisle mansions tower 
+aisle nave naves foronda molas font 
+nave porch 
+nave chancel 
+nave porch door window 
+nave aisle chantry church 
+nave orsanmichele basilicas churches 
+nave aisle mansions tower 
+nave naves foronda molas font 
+porch chancel 
+porch door window 
+porch aisle chantry church 
+porch chancel chapels churches 
+porch aisle mansions tower 
+porch nave naves foronda molas font 
+chancel porch door window 
+chancel presbytery church 
+chancel chapels churches 
+chancel belfry spire tower 
+chancel byzantine-style palladian floorplan font 
+window switch saint co-cathedral church 
+window switch saint co-cathedral church churches 
+window wall arch tower 
+window finder tablet font 
+church churches 
+church meetinghouse schoolhouse chimney tower 
+church location office interior floorplan font 
+churches pulpits steeples towers tower 
+churches pulpits steeples galleried floorplan font 
+tower towers galleried floorplan font 

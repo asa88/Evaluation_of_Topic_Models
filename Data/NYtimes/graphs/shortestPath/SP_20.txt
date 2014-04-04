@@ -1,0 +1,45 @@
+patient affecting injury arthritis cancer 
+patient profession practitioner doctor 
+patient profession institution medical 
+patient medication vaccines vaccine disease 
+patient prescription drug 
+patient care health 
+patient medication treatment 
+patient recovery safety hospital 
+patient care 
+cancer neuropsychiatric gynecological veterinarian doctor 
+cancer psychiatric medical 
+cancer disease 
+cancer arthritis alcoholism trafficking drug 
+cancer psychiatric medical health 
+cancer psychiatric rehabilitation treatment 
+cancer psychiatric clinic hospital 
+cancer psychiatric medical counselling care 
+doctor physician specialist medical 
+doctor anatomy embryology transplantation arthritis disease 
+doctor occult improbable complete food drug 
+doctor practitioner technologist management health 
+doctor practitioner rehabilitative rehabilitation treatment 
+doctor counselor chair safety hospital 
+doctor practitioner rehabilitative counselling care 
+medical psychiatric cancer disease 
+medical services inspection drug 
+medical health 
+medical rehabilitation treatment 
+medical psychiatric clinic hospital 
+medical counselling care 
+disease pandemic epidemic drugs drug 
+disease arthritis transplantation mental health 
+disease venereal cardiac treatment 
+disease cancer psychiatric clinic hospital 
+disease epilepsy autism involvement care 
+drug inspection administration health 
+drug alcohol treatment 
+drug inspection safety hospital 
+drug prescription patient care 
+health rehabilitation treatment 
+health planning safety hospital 
+health care 
+treatment life-saving safety hospital 
+treatment rehabilitation health care 
+hospital maternity daycare childcare care 

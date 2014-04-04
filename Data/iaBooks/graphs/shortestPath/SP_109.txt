@@ -1,0 +1,45 @@
+aisle nave 
+aisle nave portico cappella concert choir 
+aisle porch door window 
+aisle furthest speyerbach bank capital 
+aisle chantry church churches 
+aisle mansions tower 
+aisle transept 
+aisle mansions tower arch 
+aisle chantry chapel 
+nave portico cappella concert choir 
+nave porch door window 
+nave aisle furthest speyerbach bank capital 
+nave orsanmichele basilicas churches 
+nave aisle mansions tower 
+nave transept 
+nave porch colonnade arch 
+nave aisle chantry chapel 
+choir concert rehearsal bedroom balcony window 
+choir concert jazz sons capital 
+choir concert reunion hour church churches 
+choir ballroom hotel square tower 
+choir concert cappella portico nave transept 
+choir ensemble trio pearl arch 
+choir concert reunion hour church chapel 
+window wall liberty full capital 
+window switch saint co-cathedral church churches 
+window wall arch tower 
+window door porch transept 
+window wall arch 
+window wall chimney schoolhouse parsonage chapel 
+capital ireland stone church churches 
+capital ireland jo arch tower 
+capital community present old gilesgate transept 
+capital ireland jo arch 
+capital ireland stone church chapel 
+churches pulpits steeples towers tower 
+churches chapels kinkell transept 
+churches church memorial birthplace arch 
+churches church chapel 
+tower mansions aisle transept 
+tower arch 
+tower undercroft churchyard chapel 
+transept porch colonnade arch 
+transept gilesgate refectory chapel 
+arch monument villa chapel 

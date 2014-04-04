@@ -1,0 +1,45 @@
+tint iridescence tints hues tone 
+tint hue bright safety full background 
+tint hue bright metal solid light 
+tint luster texture 
+tint hue bright dark 
+tint blue-gray pigskin muffs brush 
+tint hue bright shade 
+tint mo yo wars shadow 
+tint iridescence iridescent delicate 
+tone subtle subtler deftness background 
+tone fuller genuine great light 
+tone subtle psionic automaton binary texture 
+tone mood forever fear dark 
+tone bare brush 
+tone hues shades shade 
+tone subtle spiral zero shadow 
+tone subtle reflective delicate 
+background full special light 
+background metric filter texture 
+background full bad dark 
+background full double pencil brush 
+background full hell death shade 
+background well-honed sobriety watchful shadow 
+background deftness sheer delicate 
+light complete color palette texture 
+light children alone dark 
+light warping trimming brush 
+light work death shade 
+light duty attack zero shadow 
+light special decoration conspicuous delicate 
+texture lustre bright dark 
+texture shading semi-translucent dimpled brush 
+texture coarse shade 
+texture palette silhouette slipstream shadow 
+texture coarser softer delicate 
+dark rusty feather brush 
+dark bright shade 
+dark fear wars shadow 
+dark skinned iridescent delicate 
+brush corduroy sappy shade 
+brush feather red wars shadow 
+brush dimpled tinsel confetti delicate 
+shade paradise colossus shadow 
+shade coarse polished delicate 
+shadow sight fun midnight toast delicate 

@@ -195,7 +195,7 @@ class MineFeatures(object):
         
     
     '''Build spanning graph fro feature calculation'''
-    def calc_SpanningFeatures(self):
+    def calc_SpanningFeatures(self,path,count):
         self.gS.add_nodes_from(self.gM.nodes())
         self.gS_w.add_nodes_from(self.gM.nodes())
         
@@ -205,35 +205,34 @@ class MineFeatures(object):
         path_len=0
         sp_count=0
         
+        #open file to write shortes paths
+        path_file=open(os.getcwd()+path+'shortestPath/SP_'+str(count)+'.txt','w+')
+                   
         for source in self.gM.nodes():
             for target in self.gM.nodes():
                 if source!=target and [source,target] not in closed:
                     path=nx.shortest_path(self.G, source, target)
                     sp_count+=1
-                    
+                    for item in path:
+                        path_file.write(item+' ') #update path txt file
+                    path_file.write('\n')
                     self.update_SPfeatures(path)
+                    
                     #append used nodes to closed
                     closed.append([source,target])
                     closed.append([target,source])
-                    
-                    # self.gS.add_nodes_from(path[1:len(path)-1])
                     path_len= len(path)-1
                     
-                                       
+                    #write discovered paths to file for refrence
+                                
                     #add weighted edges to weighted graph
                     self.gS_w.add_edge(source,target,weight=path_len)
-                    '''
-                    #add adges to normal spanning graph
-                    for i in range(0,len(path)-1):
-                        try:
-                            self.gS.add_edge(path[i],path[i+1])
-                        except:
-                            pass
-                    '''
+                   
         #update the value of average
         self.AvgSPlen=self.AvgSPlen/sp_count
+        path_file.close()
+
         
-      
         #self.gS=nx.minimum_spanning_tree(self.gS)
         self.gS_w=nx.minimum_spanning_tree(self.gS_w)
         
@@ -325,20 +324,20 @@ class MineFeatures(object):
             
             '''Feature Calculation'''
             self.calc_ProjFeatures()
-            self.calc_SpanningFeatures()
+            self.calc_SpanningFeatures(path,count)
             
             '''Plot Graphs'''
-            self.plot_graphs(path,count)
+            #self.plot_graphs(path,count)
             count+=1 
            
             
-            ''' Concatenate features and write to the File'''
+            ''' Concatenate features and write to the File '''
             fea=str(self.misses)+' '+ str(self.gM_connComp) + ' ' +str(self.gM_sizeMaxComp) + ' ' + str(self.gM_maxDeg)
             fea1= str(self.gS_avgMSTWeight) +' ' + str(self.gS_RatioC) + ' ' + str(self.gS_MaxDegreeM) + ' ' + str(self.gS_MaxDegreeC)+ ' ' +str(self.gS_AvgDegree) + ' ' + str(self.gS_Density)
             fea2=str(self.AvgSPlen)+' ' +str(self.MaxSPlen)+ ' '+str(self.NumSP1)+' '+ str(self.NumSP2)+' '+str(self.NumSP3)+' '+str(self.NumSP4)+' '+str(self.NumSP5)+' '+str(self.NumSPm)
             f=fea+' ' +fea1 + ' '+ fea2
             self.Feature_file.write(f+'\n')
-            
+           
             ''' CLEAR ALL FEATURE VARS'''
             self.clearVars()
             
@@ -383,8 +382,8 @@ D5=open(data_path+'Newman-data/iabooks.topics.txt','r')
 
 book_path='/Data/iaBooks/graphs/'
 news_path='/Data/NYtimes/graphs/'
-Data.genFeatures(D5,book_path)
-#Data.genFeatures(D4,news_path)
+#Data.genFeatures(D5,book_path)
+Data.genFeatures(D4,news_path)
 '''
 #Data.loadGraphEdgesTopicEdges(f1)
 Data.buildProjectionGraph(f1)

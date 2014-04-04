@@ -1,0 +1,45 @@
+heart sufferer patient 
+heart location medical psychiatric cancer 
+heart safety chair counselor doctor 
+heart location medical 
+heart blind incurable venereal disease 
+heart blood 
+heart unhealed apoplectic appendectomy surgery 
+heart safety hospital 
+heart safety life-saving treatment 
+patient affecting injury arthritis cancer 
+patient profession practitioner doctor 
+patient profession institution medical 
+patient medication vaccines vaccine disease 
+patient sufferer heart blood 
+patient medication anesthesia surgery 
+patient recovery safety hospital 
+patient medication treatment 
+cancer neuropsychiatric gynecological veterinarian doctor 
+cancer psychiatric medical 
+cancer disease 
+cancer breast bone blood 
+cancer transplant surgery 
+cancer psychiatric clinic hospital 
+cancer psychiatric rehabilitation treatment 
+doctor physician specialist medical 
+doctor anatomy embryology transplantation arthritis disease 
+doctor midwife chest blood 
+doctor anatomy pathology surgery 
+doctor counselor chair safety hospital 
+doctor practitioner rehabilitative rehabilitation treatment 
+medical psychiatric cancer disease 
+medical location heart blood 
+medical orthopedic surgery 
+medical psychiatric clinic hospital 
+medical rehabilitation treatment 
+disease venereal incurable blood 
+disease cancer transplant surgery 
+disease cancer psychiatric clinic hospital 
+disease venereal cardiac treatment 
+blood altered radically hernia surgery 
+blood alone bridge hospital 
+blood smoking alcohol treatment 
+surgery orthopedic psychiatric clinic hospital 
+surgery anesthesia treatment 
+hospital safety life-saving treatment 

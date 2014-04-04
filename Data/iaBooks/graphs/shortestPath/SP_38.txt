@@ -1,0 +1,45 @@
+aisle nave 
+aisle mansions palaces salutation parousia arche 
+aisle aisles carnations sweaters pointed 
+aisle shambles treetops verandah roof 
+aisle porch door window 
+aisle mansions tower 
+aisle transept 
+aisle mansions tower arch 
+aisle chantry chapel 
+nave orsanmichele pantheon ogdoad aeon arche 
+nave aisles carnations sweaters pointed 
+nave belfry cupola roof 
+nave porch door window 
+nave aisle mansions tower 
+nave transept 
+nave porch colonnade arch 
+nave aisle chantry chapel 
+arche energeia pneuma composure mirrored figured pointed 
+arche loge louvre exterior ceiling roof 
+arche telos disinformation privileged shift window 
+arche vallée nord pearl arch tower 
+arche aeon vitruvian facade porch transept 
+arche telos gemstone pearl arch 
+arche energeia metempsychosis transfiguration basilica chapel 
+pointed sharpened concealed hanging roof 
+pointed tipped cut switch window 
+pointed sharpened bent leaning tower 
+pointed sweaters carnations aisles aisle transept 
+pointed ribs clad marble arch 
+pointed beige pink dark crypt chapel 
+roof skylight window 
+roof dome tower 
+roof verandah colonnade porch transept 
+roof verandah colonnade arch 
+roof chimney schoolhouse parsonage chapel 
+window wall arch tower 
+window door porch transept 
+window wall arch 
+window wall chimney schoolhouse parsonage chapel 
+tower mansions aisle transept 
+tower arch 
+tower undercroft churchyard chapel 
+transept porch colonnade arch 
+transept gilesgate refectory chapel 
+arch monument villa chapel 
