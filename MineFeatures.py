@@ -231,7 +231,6 @@ class MineFeatures(object):
         #update the value of average
         self.AvgSPlen=self.AvgSPlen/sp_count
         path_file.close()
-
         
         #self.gS=nx.minimum_spanning_tree(self.gS)
         self.gS_w=nx.minimum_spanning_tree(self.gS_w)
@@ -327,7 +326,7 @@ class MineFeatures(object):
             self.calc_SpanningFeatures(path,count)
             
             '''Plot Graphs'''
-            #self.plot_graphs(path,count)
+            self.plot_graphs(path,count)
             count+=1 
            
             
@@ -360,8 +359,13 @@ class MineFeatures(object):
             
         
 ''' contains location of the graph'''
+'''
 Graph_path='/home/ankit/Dropbox/14-topics-semantics/en-network/en-network.labels.csv'
 GraphEdges_path='/home/ankit/Dropbox/14-topics-semantics/en-network/en-network.edges'
+'''
+Graph_path='/home/ankit/Dropbox/14-topics-semantics/en-network/en-100k/en-100k.labels'
+GraphEdges_path='/home/ankit/Dropbox/14-topics-semantics/en-network/en-100k/en-40_normed_100k.edges'
+
 f = open(Graph_path,'r')
 f1= open(GraphEdges_path,'r')
 Data = MineFeatures()
