@@ -1,45 +1,45 @@
-case lynching injunction lobbyist attorney 
-case garnishee court 
-case lynching trial 
-case kranzbühler general office federal 
-case interpleader adjudication legal 
-case life conscience justice 
-case complicity citizen lawyer 
-case garnishee court judge 
-case scandal silent soldier law 
-attorney commissioner magistrate court 
-attorney prosecutor prosecution trial 
-attorney commissioner judicial federal 
-attorney commissioner justice legal 
-attorney prosecutor justice 
+case post paymaster attorney 
+case court 
+case trial 
+case litigation federal 
+case litigation legal 
+case concurrence justice 
+case litigation lawyer 
+case retrial judge 
+case all law 
+attorney advocate court 
+attorney prosecutor trial 
+attorney probate federal 
+attorney attorneys legal 
+attorney advocate justice 
 attorney lawyer 
-attorney commissioner judge 
-attorney commissioner justice legal law 
-court judicial moot trial 
-court judicial federal 
-court judicial legal 
-court appeal justice 
-court young publicist lawyer 
+attorney judge 
+attorney paymaster admiralty law 
+court trial 
+court judiciary federal 
+court tribunals legal 
+court justice 
+court advocate lawyer 
 court judge 
-court admiralty law 
-trial moot judicial federal 
-trial moot legal 
-trial moot judicial justice 
-trial juror publicist lawyer 
-trial juror judge 
-trial moot legal law 
-federal judicial legal 
-federal prisons justice 
-federal judicial commissioner attorney lawyer 
-federal attorneys justice judge 
-federal judicial legal law 
+court moot law 
+trial judicial federal 
+trial complaint legal 
+trial judges justice 
+trial mock lawyer 
+trial judges judge 
+trial criminal law 
+federal litigation legal 
+federal criminal justice 
+federal litigation lawyer 
+federal prosecutors judge 
+federal unconstitutional law 
 legal justice 
-legal citizenship citizen lawyer 
+legal lawyer 
 legal justice judge 
 legal law 
-justice commissioner attorney lawyer 
+justice advocate lawyer 
 justice judge 
-justice legal law 
-lawyer attorney commissioner judge 
-lawyer citizen citizenship legal law 
-judge justice legal law 
+justice criminal law 
+lawyer judge 
+lawyer litigation law 
+judge moot law 

@@ -1,45 +1,45 @@
-program educational education school 
-program educational education 
-program specialist technologist researcher professor 
-program educational community campus 
-program special western university harvard 
-program educational education college 
-program educational student 
-program educational student graduate 
-program educational management university 
-school education 
-school schools teachers professors professor 
-school public community campus 
-school university harvard 
+program preschool school 
+program guidance education 
+program teacher professor 
+program facility campus 
+program negotiation diplomacy harvard 
+program university-level college 
+program student 
+program teaching graduate 
+program institute university 
+school vocational education 
+school endowed professor 
+school campus 
+school graduate harvard 
 school college 
-school public student 
-school public student graduate 
+school student 
+school graduate 
 school university 
-education management technologist researcher professor 
-education educational community campus 
-education college divinity harvard 
-education college 
-education educational student 
-education certificate nursing graduate 
-education college university 
-professor scholar fellowship foundation build campus 
-professor emerita ryerson cornell harvard 
-professor researcher technologist management college 
-professor scholar scholarship student 
-professor scholar fellowship journalism graduate 
-professor professors faculty university 
-campus community academy university harvard 
-campus marycrest fontbonne college 
-campus community charities student 
-campus community charities student graduate 
-campus community academy university 
-harvard divinity college 
-harvard university student 
-harvard university student graduate 
+education teacher professor 
+education polytechnic campus 
+education university harvard 
+education polytechnic college 
+education student 
+education midwifery graduate 
+education university 
+professor faculty campus 
+professor wisconsin-madison harvard 
+professor university college 
+professor professors student 
+professor professors graduate 
+professor university 
+campus university harvard 
+campus college 
+campus regional student 
+campus school graduate 
+campus university 
+harvard college 
+harvard professors student 
+harvard graduate 
 harvard university 
-college academy student 
-college science journalism graduate 
+college student 
+college graduate 
 college university 
 student graduate 
 student university 
-graduate student university 
+graduate university 

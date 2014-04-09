@@ -1,45 +1,45 @@
-index citation notes reference 
-index int acc sec min 
-index read point color 
-index citation unit support army 
-index test key major commercial 
-index expense underwriting purchasing equipment 
-index indicators dissemination adaptation 
-index citation unit operations operation 
-index performance artist film 
-reference profile wide comm sec min 
-reference personal character color 
-reference description command corps army 
-reference notes business commercial 
-reference guide systems equipment 
-reference overview knowledge adaptation 
-reference description command operations operation 
-reference profile script screenplay film 
-min sec dbi byte check color 
-min sec aba john general army 
-min sec dbi connect direct commercial 
-min bi aku equipments equipment 
-min reb advances experience knowledge adaptation 
-min sec dbi pilot demonstration operation 
-min yr brave alone movie film 
-color command corps army 
-color prince food commercial 
-color check systems equipment 
-color character subject adaptation 
-color command operations operation 
-color prince junior film 
-army honor private commercial 
-army support capabilities systems equipment 
-army support use shaping knowledge adaptation 
-army corps force operation 
-army armies fronts front film 
-commercial purchasing equipment 
-commercial major significant large-scale adaptation 
-commercial maritime service operation 
-commercial works design film 
-equipment avionics high-performance large-scale adaptation 
-equipment firefighting decontamination decommissioning operation 
-equipment dynamics mechanics design film 
-adaptation large-scale demonstration operation 
+index methodology reference 
+index ratio db min 
+index digit bits color 
+index competitiveness morale army 
+index consumer commercial 
+index inventory equipment 
+index methodology adaptation 
+index risk testing operation 
+index yearly festival film 
+reference rec min 
+reference unique perfect color 
+reference location outpost army 
+reference available limited commercial 
+reference simulation equipment 
+reference selection adaptation 
+reference expansion operation 
+reference selection adaptation film 
+min sol yellow color 
+min ran seals army 
+min league major commercial 
+min mol sail equipment 
+min avg seasonal adaptation 
+min soe operations operation 
+min nay idiots film 
+color colored army 
+color livery limited commercial 
+color machines equipment 
+color character adaptation 
+color purple freeze operation 
+color silent film 
+army generals major commercial 
+army corps materiel equipment 
+army invasion trilogy adaptation 
+army counter-offensive operation 
+army outpost silent film 
+commercial equipment 
+commercial cooperative participatory adaptation 
+commercial servicing operation 
+commercial international film 
+equipment supplier selection adaptation 
+equipment capability operation 
+equipment production animation film 
+adaptation enhancement deployment operation 
 adaptation film 
-operation force valley front film 
+operation construction filming film 

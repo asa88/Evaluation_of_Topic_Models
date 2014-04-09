@@ -1,45 +1,45 @@
-patient affecting injury arthritis cancer 
-patient profession practitioner doctor 
-patient profession institution medical 
-patient medication vaccines vaccine disease 
-patient prescription drug 
-patient care health 
-patient medication treatment 
-patient recovery safety hospital 
+patient epilepsy cancer 
+patient therapist doctor 
+patient surgical medical 
+patient epilepsy disease 
+patient therapeutic drug 
+patient health 
+patient treatment 
+patient hospital 
 patient care 
-cancer neuropsychiatric gynecological veterinarian doctor 
-cancer psychiatric medical 
+cancer medical doctor 
+cancer medical 
 cancer disease 
-cancer arthritis alcoholism trafficking drug 
-cancer psychiatric medical health 
-cancer psychiatric rehabilitation treatment 
-cancer psychiatric clinic hospital 
-cancer psychiatric medical counselling care 
-doctor physician specialist medical 
-doctor anatomy embryology transplantation arthritis disease 
-doctor occult improbable complete food drug 
-doctor practitioner technologist management health 
-doctor practitioner rehabilitative rehabilitation treatment 
-doctor counselor chair safety hospital 
-doctor practitioner rehabilitative counselling care 
-medical psychiatric cancer disease 
-medical services inspection drug 
+cancer rehabilitation drug 
+cancer oncology health 
+cancer epilepsy treatment 
+cancer oncology hospital 
+cancer psychiatric care 
+doctor medical 
+doctor clinic cardiovascular disease 
+doctor clinic rehabilitation drug 
+doctor clinic health 
+doctor clinic surgical treatment 
+doctor hospital 
+doctor clinic care 
+medical cardiovascular disease 
+medical prescribing drug 
 medical health 
-medical rehabilitation treatment 
-medical psychiatric clinic hospital 
-medical counselling care 
-disease pandemic epidemic drugs drug 
-disease arthritis transplantation mental health 
-disease venereal cardiac treatment 
-disease cancer psychiatric clinic hospital 
-disease epilepsy autism involvement care 
-drug inspection administration health 
-drug alcohol treatment 
-drug inspection safety hospital 
-drug prescription patient care 
-health rehabilitation treatment 
-health planning safety hospital 
+medical surgical treatment 
+medical hospital 
+medical care 
+disease alcoholism drug 
+disease centers health 
+disease treatment 
+disease pediatric hospital 
+disease treatment care 
+drug policy health 
+drug alcoholism treatment 
+drug rehabilitation hospital 
+drug occupational care 
+health palliative treatment 
+health oncology hospital 
 health care 
-treatment life-saving safety hospital 
-treatment rehabilitation health care 
-hospital maternity daycare childcare care 
+treatment geriatric hospital 
+treatment care 
+hospital clinic care 

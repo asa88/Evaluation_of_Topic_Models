@@ -1,45 +1,45 @@
-tint iridescence tints hues tone 
-tint hue bright safety full background 
-tint hue bright metal solid light 
-tint luster texture 
-tint hue bright dark 
-tint blue-gray pigskin muffs brush 
-tint hue bright shade 
-tint mo yo wars shadow 
-tint iridescence iridescent delicate 
-tone subtle subtler deftness background 
-tone fuller genuine great light 
-tone subtle psionic automaton binary texture 
-tone mood forever fear dark 
-tone bare brush 
-tone hues shades shade 
-tone subtle spiral zero shadow 
-tone subtle reflective delicate 
-background full special light 
-background metric filter texture 
-background full bad dark 
-background full double pencil brush 
-background full hell death shade 
-background well-honed sobriety watchful shadow 
-background deftness sheer delicate 
-light complete color palette texture 
-light children alone dark 
-light warping trimming brush 
-light work death shade 
-light duty attack zero shadow 
-light special decoration conspicuous delicate 
-texture lustre bright dark 
-texture shading semi-translucent dimpled brush 
-texture coarse shade 
-texture palette silhouette slipstream shadow 
-texture coarser softer delicate 
-dark rusty feather brush 
-dark bright shade 
-dark fear wars shadow 
-dark skinned iridescent delicate 
-brush corduroy sappy shade 
-brush feather red wars shadow 
-brush dimpled tinsel confetti delicate 
-shade paradise colossus shadow 
-shade coarse polished delicate 
-shadow sight fun midnight toast delicate 
+tint pattern tone 
+tint background 
+tint light 
+tint patina texture 
+tint dark 
+tint vermilion elk brush 
+tint shade 
+tint glow shadow 
+tint background vivid delicate 
+tone muted background 
+tone trash neon light 
+tone acoustic amplifier texture 
+tone subtly darkly dark 
+tone dope varnish brush 
+tone pills shade 
+tone twisted death shadow 
+tone jarring delicate 
+background bright light 
+background release texture 
+background dark 
+background lettering paint brush 
+background color shade 
+background foreground shadow 
+background vivid delicate 
+light color texture 
+light dark 
+light train wagon brush 
+light color shade 
+light flickering shadow 
+light rocket curved delicate 
+texture shading dark 
+texture smoky elk brush 
+texture color shade 
+texture hues shadows shadow 
+texture delicate 
+dark iron timber brush 
+dark shade 
+dark shadow 
+dark darkly delicate 
+brush beech fawn shade 
+brush broom straw shadow 
+brush bark delicate 
+shade mist shadow 
+shade mellow delicate 
+shadow gigantic delicate 

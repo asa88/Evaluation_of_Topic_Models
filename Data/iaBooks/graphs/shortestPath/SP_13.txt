@@ -1,45 +1,36 @@
-stone defense intelligence service 
-stone pillar burial altar 
-stone church 
-stone sarcophagus reliquary monstrance ciborium vestment 
-stone wooden stairs pulpit 
-stone church churches 
-stone church presbytery chancel 
-stone church cathedral 
-stone church chapel 
-service special decoration reliefs altars altar 
-service office location church 
-service uniform mortarboard tippet rochet vestment 
-service winter spring retreat pulpit 
-service office location church churches 
-service military memorial church presbytery chancel 
-service office location church cathedral 
-service office location church chapel 
-altar burial chantry church 
-altar pantokrator cherubim chasuble vestment 
+stone foundation program service 
+stone alabaster altar 
+stone kiln parsonage church 
+stone slate pulpit 
+stone foundation charities churches 
+stone parapets chancel 
+stone foundation cathedral 
+stone erected chapel 
+service decoration façade altar 
+service operations mission church 
+service health pew pulpit 
+service operations mission churches 
+service decorations decorated chancel 
+service program foundation cathedral 
+service office residence chapel 
+altar baptismal church 
 altar pulpit 
-altar altars chapels churches 
-altar pulpit chancel 
-altar cloister cathedral 
-altar cloister chapel 
-church churches pulpits vestments chasuble vestment 
-church presbytery pulpit 
+altar priests churches 
+altar nave chancel 
+altar cathedral 
+altar chapel 
+church pulpit 
 church churches 
-church presbytery chancel 
+church cloisters chancel 
 church cathedral 
 church chapel 
-vestment ciborium monstrance lectern pulpit 
-vestment chasuble vestments pulpits churches 
-vestment ciborium baldacchino byzantine-style chancel 
-vestment chasuble cherubim pantokrator transfiguration basilica cathedral 
-vestment chasuble mitres rostra calvary chapel 
-pulpit presbytery church churches 
+pulpit church churches 
 pulpit chancel 
-pulpit presbytery cathedral 
-pulpit presbytery chapel 
+pulpit cathedral 
+pulpit chapel 
 churches chapels chancel 
 churches church cathedral 
-churches church chapel 
-chancel presbytery cathedral 
-chancel presbytery chapel 
+churches presbyterian chapel 
+chancel vestry cathedral 
+chancel chapel 
 cathedral chapel 

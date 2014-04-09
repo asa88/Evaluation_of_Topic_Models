@@ -1,45 +1,45 @@
-inscription codex text money room 
-inscription behistun faiyum fayum excavated excavation 
-inscription stela tomb ruins pompeii 
-inscription inscribed engraved terracotta marble 
-inscription behistun faiyum kourion herculaneum 
-inscription graffito stoup censer brazier bath 
-inscription copperplate engraving painting 
-inscription copperplate medicea mondragone pienza ravenna naples 
-inscription behistun ramesside pre-roman bronze 
-room clock vaults excavating excavation 
-room gilded deserted ruins pompeii 
-room gilded marble 
-room gilded terracotta funerary kourion herculaneum 
-room shower bath 
-room mural sculpture painting 
-room hours tours bologne cadaqués venice naples 
-room scene golden bronze 
-excavation excavated iron-age stonehenge pompeii 
-excavation quarrying diggings farm marble 
-excavation snaketown höyük herculaneum 
-excavation excavating solarium sauna bath 
-excavation excavating erecting lithographic engraving painting 
-excavation excavating bounteous iao pisa naples 
-excavation archaeological prehistoric age bronze 
-pompeii ruins deserted gilded marble 
+inscription sarcophagus grotto room 
+inscription tumulus excavation 
+inscription mycenae pompeii 
+inscription effigy marble 
+inscription papyri herculaneum 
+inscription sarcophagus fountain bath 
+inscription sarcophagus frieze painting 
+inscription pylos susa naples 
+inscription bas-relief bronze 
+room attic pottery excavation 
+room attic etruscan pompeii 
+room columns marble 
+room attic papyri herculaneum 
+room bath 
+room mural painting 
+room bedroom revels savoy naples 
+room lab gold bronze 
+excavation unearthed pompeii 
+excavation quarry marble 
+excavation herculaneum 
+excavation exhumation embalming bath 
+excavation pottery ceramic painting 
+excavation herculaneum etruria naples 
+excavation megalithic bronze 
+pompeii statues marble 
 pompeii herculaneum 
-pompeii ruins castle scone bath 
-pompeii stonehenge mosaics tapestry painting 
-pompeii baiae glanum larino pienza ravenna naples 
-pompeii catacombs relics prehistoric age bronze 
-marble terracotta funerary kourion herculaneum 
-marble chimney crib bath 
-marble terracotta decorative painting 
-marble terracotta reliefs vases iao pisa naples 
-marble hill mountain bronze 
-herculaneum höyük glanum cistern hearth bath 
-herculaneum kourion funerary terracotta decorative painting 
-herculaneum höyük glanum larino pienza ravenna naples 
-herculaneum kourion tumulus pre-roman bronze 
-bath bathing carving tapestry painting 
-bath scone paratha bologna pisa naples 
-bath sauna pool bronze 
-painting decorative sculptural vases iao pisa naples 
-painting unfinished original golden bronze 
-naples sicily sardinia italy prix bronze 
+pompeii colosseum lounge toilets bath 
+pompeii allegory painting 
+pompeii ostia naples 
+pompeii finds bronze 
+marble faience herculaneum 
+marble fountain bath 
+marble frieze painting 
+marble tuscan neapolitan naples 
+marble statuettes bronze 
+herculaneum pottery furniture stove bath 
+herculaneum amphorae vase painting 
+herculaneum etruria naples 
+herculaneum tumuli bronze 
+bath fountain mural painting 
+bath worcester corpus naples 
+bath fountain bas-relief bronze 
+painting biennale venice naples 
+painting diorama statuette bronze 
+naples susa pylos mycenaean bronze 

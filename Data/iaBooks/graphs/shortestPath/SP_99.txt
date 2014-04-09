@@ -1,45 +1,45 @@
-sort start end program short 
-sort represent hold receive 
-sort nij vcat epso act 
-sort start end rest 
-sort sense life person 
-sort start body purpose 
-sort reminder afters occasion 
-sort represent backtrack retry answer 
-sort necessity determination respect 
-short special service message receive 
-short section ordinance act 
-short list end rest 
-short courage life person 
-short special supplementary purposes purpose 
-short special take day occasion 
-short lengthy lasting question answer 
-short work come right respect 
-receive opt issuer intermediary arbiter act 
-receive earn reach rest 
-receive offer job person 
-receive rationale purpose 
-receive accept flaw bangerz occasion 
-receive deliver brings answer 
-receive hold take right respect 
-act registration authorisation reach rest 
-act amending paperwork garnishee person 
-act amendment bill body purpose 
-act discourtesy unfitness disregard occasion 
-act epso tassc adalah answer 
-act registration compliance commensurate respect 
-rest right life person 
-rest right ways body purpose 
-rest right take day occasion 
-rest right proud answer 
-rest right respect 
-person life body purpose 
-person disregard occasion 
-person life truth answer 
-person life right respect 
-purpose self gratitude occasion 
-purpose aim promise perfect answer 
-purpose self satisfaction respect 
-occasion giuca recall answer 
-occasion day take right respect 
-answer proud right respect 
+sort memoir non-fiction short 
+sort repeat respond receive 
+sort mistakes unnatural act 
+sort dreams rest 
+sort tells person 
+sort possibility purpose 
+sort moment occasion 
+sort words answer 
+sort love respect 
+short best for receive 
+short 30-minute schedule act 
+short nominee soap rest 
+short bedtime phenomenon person 
+short 30-minute special purpose 
+short non-fiction month occasion 
+short gripping boring answer 
+short bedtime happiness respect 
+receive respond perform act 
+receive refund sale rest 
+receive refund debtor person 
+receive exceed requirements purpose 
+receive qualify note occasion 
+receive send answer 
+receive refund sale respect 
+act up all rest 
+act compulsion person 
+act provision purpose 
+act jurisdiction instance occasion 
+act excuse answer 
+act equal respect 
+rest living person 
+rest betterment purpose 
+rest moment occasion 
+rest love answer 
+rest love respect 
+person personal purpose 
+person circumstance occasion 
+person kindness answer 
+person respect 
+purpose reason occasion 
+purpose reason answer 
+purpose reason respect 
+occasion reason answer 
+occasion reason respect 
+answer hate respect 

@@ -1,45 +1,45 @@
 aisle nave 
-aisle nave portico cappella concert choir 
-aisle porch door window 
-aisle furthest speyerbach bank capital 
-aisle chantry church churches 
-aisle mansions tower 
+aisle narthex carillon choir 
+aisle narthex window 
+aisle doorways capitals capital 
+aisle nave chapels churches 
+aisle narthex tower 
 aisle transept 
-aisle mansions tower arch 
-aisle chantry chapel 
-nave portico cappella concert choir 
-nave porch door window 
-nave aisle furthest speyerbach bank capital 
-nave orsanmichele basilicas churches 
-nave aisle mansions tower 
+aisle round-arched arch 
+aisle narthex chapel 
+nave bell carillon choir 
+nave narthex window 
+nave apses capitals capital 
+nave chapels churches 
+nave tower 
 nave transept 
-nave porch colonnade arch 
-nave aisle chantry chapel 
-choir concert rehearsal bedroom balcony window 
-choir concert jazz sons capital 
-choir concert reunion hour church churches 
-choir ballroom hotel square tower 
-choir concert cappella portico nave transept 
-choir ensemble trio pearl arch 
-choir concert reunion hour church chapel 
-window wall liberty full capital 
-window switch saint co-cathedral church churches 
-window wall arch tower 
-window door porch transept 
-window wall arch 
-window wall chimney schoolhouse parsonage chapel 
-capital ireland stone church churches 
-capital ireland jo arch tower 
-capital community present old gilesgate transept 
-capital ireland jo arch 
-capital ireland stone church chapel 
-churches pulpits steeples towers tower 
-churches chapels kinkell transept 
-churches church memorial birthplace arch 
-churches church chapel 
-tower mansions aisle transept 
+nave arch 
+nave chapel 
+choir trio suite window 
+choir music city capital 
+choir hillsong churches 
+choir carillon tower 
+choir carillon narthex transept 
+choir carillon spire arch 
+choir carillon chapel 
+window execution infrastructure capital 
+window narthex chapels churches 
+window narthex tower 
+window clerestory transept 
+window entryway arch 
+window narthex chapel 
+capital regional communities churches 
+capital capitol firehouse tower 
+capital capitals apses transept 
+capital capitals architrave arch 
+capital capitol palace chapel 
+churches monasteries palaces tower 
+churches presbytery transept 
+churches meetinghouse kiln arch 
+churches presbyterian chapel 
+tower nave transept 
 tower arch 
-tower undercroft churchyard chapel 
-transept porch colonnade arch 
-transept gilesgate refectory chapel 
-arch monument villa chapel 
+tower narthex chapel 
+transept round-arched arch 
+transept chapel 
+arch schoolhouse chapel 

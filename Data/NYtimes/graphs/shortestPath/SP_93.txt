@@ -1,45 +1,45 @@
-percent profit price 
-percent share money million 
-percent share 
-percent confidence rate 
-percent one-third half quarter 
-percent confidence balance firm investor 
-percent profit buyer insider reporter analyst 
-percent profit discount market 
-percent profit discount stock 
-price profit money million 
-price profit share 
-price safety delivery rate 
-price sons 1st quarter 
-price corporation firm investor 
-price safety services analyst 
-price premium market 
-price premium stock 
+percent gdp price 
+percent million 
+percent success share 
+percent rate 
+percent failed standings quarter 
+percent gdp equities investor 
+percent incentive program analyst 
+percent gdp equities market 
+percent gdp prices stock 
+price cost million 
+price share 
+price rate 
+price sales attendance quarter 
+price buyer investor 
+price fee program analyst 
+price market 
+price stock 
 million money share 
-million limit minimum rate 
-million money without half quarter 
-million yall infield firm investor 
-million money credit corporate analyst 
-million money job trade market 
-million money purchases stock 
-share satisfaction confidence rate 
-share future half quarter 
-share save global investor 
-share money credit corporate analyst 
-share symbid marketplace market 
-share buying stock 
-rate confidence strength pursuit cyclist quarter 
-rate delivery product corporate investor 
-rate delivery transport services analyst 
-rate unemployment domestic trade market 
-rate options purchases stock 
-quarter 1st sons industries markets investor 
-quarter 1st sons safety services analyst 
-quarter 1st sons trade market 
-quarter cyclist triathlete finisher premium stock 
-investor marketing analyst 
-investor markets market 
-investor markets market stock 
-analyst marketing consumer market 
-analyst corporate markets market stock 
+million cost rate 
+million bn quarter 
+million money billionaire investor 
+million debt financial analyst 
+million cost domestic market 
+million cost prices stock 
+share rate 
+share earnings attendance quarter 
+share equity investor 
+share brokers consulting analyst 
+share exchange market 
+share stock 
+rate cumulative standings quarter 
+rate hedge investor 
+rate capabilities analyst 
+rate commodity market 
+rate prices stock 
+quarter attendance ratings investor 
+quarter preliminary evaluation program analyst 
+quarter place market 
+quarter place market stock 
+investor analyst 
+investor competitiveness market 
+investor investment stock 
+analyst business market 
+analyst consultants leasing stock 
 market stock 

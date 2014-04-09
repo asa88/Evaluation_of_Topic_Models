@@ -1,45 +1,45 @@
-fda efsa mhra medicines pharmaceuticals pharmaceutical 
-fda hrsa tricare restricted delivery product 
-fda hrsa nichd lactation contraceptive prescription 
-fda hrsa tricare permitting issuing patent 
-fda hrsa tricare referrals medical 
-fda fsis cfia ondcp norml marijuana 
-fda fsis nfip retraining inspection drug 
-fda hrsa samhsa resuscitation treatment 
-fda efsa mhra medicines cannabis cocaine 
-pharmaceutical consulting corporate product 
-pharmaceutical pharmaceuticals over-the-counter prescription 
-pharmaceutical consultants clients trademarks patent 
-pharmaceutical biotechnology nutrition counseling medical 
-pharmaceutical pharmaceuticals medicines drugs marijuana 
-pharmaceutical pharmaceuticals over-the-counter prescription drug 
-pharmaceutical therapeutics therapeutic treatment 
-pharmaceutical pharmaceuticals medicines cannabis cocaine 
-product delivery recovery patient prescription 
-product customer vendor directory patent 
-product model class medical 
-product delivery inspection drug marijuana 
-product corporate food drug 
-product corporate food alcohol treatment 
-product delivery inspection drug cocaine 
-prescription benefits disclosure copyright patent 
-prescription patient care health medical 
-prescription alcohol marijuana 
+fda usda organic pharmaceutical 
+fda hhs compliance product 
+fda prescription 
+fda uspto patent 
+fda hhs counseling medical 
+fda prescription marijuana 
+fda drug 
+fda prophylactic treatment 
+fda drug cocaine 
+pharmaceutical cosmetics product 
+pharmaceutical homeopathic prescription 
+pharmaceutical printing patent 
+pharmaceutical agricultural medical 
+pharmaceutical homeopathic prescription marijuana 
+pharmaceutical nutrition drug 
+pharmaceutical microbiology therapy treatment 
+pharmaceutical nutrition alcohol cocaine 
+product brand-name prescription 
+product application patent 
+product solutions healthcare medical 
+product implementation narcotic marijuana 
+product compliance drug 
+product rating parental treatment 
+product implementation narcotic cocaine 
+prescription compliance patent 
+prescription prescribing medical 
+prescription marijuana 
 prescription drug 
-prescription contraceptive treatment 
-prescription drug cocaine 
-patent survey government-sponsored cyber medical 
-patent fraudulent malpractice marijuana 
-patent fraudulent illegal narcotics drug 
-patent postal life-saving treatment 
-patent fraudulent counterfeit heroin cocaine 
-medical health care choices marijuana 
-medical services inspection drug 
-medical rehabilitation treatment 
-medical services inspection drug cocaine 
+prescription treatment 
+prescription cocaine 
+patent code law medical 
+patent code adoption marijuana 
+patent inspection drug 
+patent code procedure treatment 
+patent licensing gambling cocaine 
+medical profession adoption marijuana 
+medical prescribing drug 
+medical surgical treatment 
+medical prescribing stimulants cocaine 
 marijuana drug 
-marijuana alcohol treatment 
+marijuana alcoholism treatment 
 marijuana cocaine 
-drug alcohol treatment 
+drug alcoholism treatment 
 drug cocaine 
-treatment alcohol methamphetamine cocaine 
+treatment alcohol cocaine 

@@ -1,45 +1,45 @@
-bell curtain door porch aisle 
-bell crucifix orsanmichele nave 
-bell chimney floor porch 
-bell crucifix orsanmichele chancel 
-bell curtain door window 
-bell source memorial church 
-bell source memorial church churches 
-bell chimney tower 
-bell oaken sideboard tablet font 
+bell nave aisle 
+bell nave 
+bell narthex porch 
+bell nave chancel 
+bell narthex window 
+bell belltower church 
+bell narthex chapels churches 
+bell tower 
+bell octagonal font 
 aisle nave 
 aisle porch 
-aisle transepts chancel 
-aisle porch door window 
-aisle chantry church 
-aisle chantry church churches 
-aisle mansions tower 
-aisle nave naves foronda molas font 
+aisle chancel 
+aisle narthex window 
+aisle pulpit church 
+aisle nave chapels churches 
+aisle narthex tower 
+aisle tracery font 
 nave porch 
 nave chancel 
-nave porch door window 
-nave aisle chantry church 
-nave orsanmichele basilicas churches 
-nave aisle mansions tower 
-nave naves foronda molas font 
+nave narthex window 
+nave belltower church 
+nave chapels churches 
+nave tower 
+nave octagonal font 
 porch chancel 
-porch door window 
-porch aisle chantry church 
-porch chancel chapels churches 
-porch aisle mansions tower 
-porch nave naves foronda molas font 
-chancel porch door window 
-chancel presbytery church 
+porch window 
+porch pulpit church 
+porch salvation elders churches 
+porch narthex tower 
+porch sundial font 
+chancel narthex window 
+chancel pulpit church 
 chancel chapels churches 
-chancel belfry spire tower 
-chancel byzantine-style palladian floorplan font 
-window switch saint co-cathedral church 
-window switch saint co-cathedral church churches 
-window wall arch tower 
-window finder tablet font 
+chancel narthex tower 
+chancel font 
+window recess pew church 
+window narthex chapels churches 
+window narthex tower 
+window pane font 
 church churches 
-church meetinghouse schoolhouse chimney tower 
-church location office interior floorplan font 
-churches pulpits steeples towers tower 
-churches pulpits steeples galleried floorplan font 
-tower towers galleried floorplan font 
+church edifice tower 
+church baptismal font 
+churches monasteries palaces tower 
+churches church baptismal font 
+tower octagonal font 

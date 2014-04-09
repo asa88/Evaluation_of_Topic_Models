@@ -1,45 +1,45 @@
-nave aisles rented housed built 
-nave portico cappella concert choir 
-nave porch door window 
-nave chancel byzantine-style palladian gothic 
-nave aisle chantry church 
-nave chancel presbytery cathedral 
-nave aisle mansions tower 
+nave octagonal timber-framed built 
+nave bell carillon choir 
+nave narthex window 
+nave 14th-century gothic 
+nave belltower church 
+nave iconostasis cathedral 
+nave tower 
 nave transept 
-nave aisle chantry chapel 
-built born hour reunion concert choir 
-built erected shall memory window 
-built dismantled easel style gothic 
-built erected church 
-built erected church cathedral 
-built housed building grandstand tower 
-built erected old gilesgate transept 
-built erected church chapel 
-choir concert rehearsal bedroom balcony window 
-choir chorale waltz dream neo gothic 
-choir ballroom hotel memorial church 
-choir concert reunion hour church cathedral 
-choir ballroom hotel square tower 
-choir concert cappella portico nave transept 
-choir concert reunion hour church chapel 
-window door happy style gothic 
-window switch saint co-cathedral church 
-window switch saint co-cathedral cathedral 
-window wall arch tower 
-window door porch transept 
-window wall chimney schoolhouse parsonage chapel 
-gothic baronial royal london church 
-gothic romanesque retable cloister cathedral 
-gothic neo deep rainbow dome tower 
-gothic palladian byzantine-style chancel transept 
-gothic romanesque retable cloister chapel 
+nave chapel 
+built building carillon choir 
+built redecorated fireplace window 
+built timber-framed gothic 
+built meetinghouse church 
+built meetinghouse cathedral 
+built erected tower 
+built timber-framed facade transept 
+built schoolhouse chapel 
+choir trio suite window 
+choir baroque gothic 
+choir hillsong church 
+choir choirmaster cathedral 
+choir carillon tower 
+choir carillon narthex transept 
+choir carillon chapel 
+window narthex 14th-century gothic 
+window recess pew church 
+window apse cathedral 
+window narthex tower 
+window clerestory transept 
+window narthex chapel 
+gothic 13th-century basilica church 
+gothic campanile cathedral 
+gothic campanile tower 
+gothic perpendicular transept 
+gothic campanile chapel 
 church cathedral 
-church meetinghouse schoolhouse chimney tower 
-church old gilesgate transept 
+church edifice tower 
+church presbytery transept 
 church chapel 
-cathedral cloister baths tower 
-cathedral presbytery chancel transept 
+cathedral edifice tower 
+cathedral presbytery transept 
 cathedral chapel 
-tower mansions aisle transept 
-tower undercroft churchyard chapel 
-transept gilesgate refectory chapel 
+tower nave transept 
+tower narthex chapel 
+transept chapel 

@@ -1,45 +1,45 @@
-asthma diabetes hepatitis hiv 
-asthma epilepsy disease 
-asthma kidney gastric infection 
-asthma gout gangrene amygdala virus 
-asthma chronic retardation health 
-asthma epilepsy illnesses diseased infected 
-asthma cystic malaria aids 
-asthma rheumatism abusers alleged cases 
-asthma arthritis vaccine 
-hiv coeliac sarcoidosis disease 
-hiv coeliac sarcoidosis infection 
-hiv hhv-6 rhinovirus virus 
-hiv immunization prevention health 
-hiv obesity illnesses diseased infected 
+asthma tuberculosis hiv 
+asthma disease 
+asthma infection 
+asthma tuberculosis virus 
+asthma trauma health 
+asthma septicemia infected 
+asthma aids 
+asthma infections cases 
+asthma vaccine 
+hiv disease 
+hiv infection 
+hiv virus 
+hiv hiv\/aids health 
+hiv vaccinated infected 
 hiv aids 
-hiv immunization community-based well-being situations cases 
-hiv hhv-6 vaccine 
+hiv cancers cases 
+hiv vaccine 
 disease infection 
-disease pandemic virus 
-disease arthritis transplantation mental health 
-disease epilepsy illnesses diseased infected 
-disease epilepsy autism aids 
-disease venereal neglected affecting situations cases 
+disease influenza virus 
+disease centers health 
+disease septicemia infected 
+disease aids 
+disease causes cases 
 disease vaccine 
-infection disease pandemic virus 
-infection allergic allergy nutrition health 
-infection diarrhea ticks infected 
-infection sepsis malaria aids 
-infection biopsy obstruction miscarriage alleged cases 
-infection disease vaccine 
-virus delusional compulsive dysfunction retardation health 
-virus infecting infected 
-virus pandemic polio aids 
-virus microbe repercussions plight case cases 
-virus pandemic disease vaccine 
-health development viability seeds infected 
-health planning safety aids 
-health welfare well-being situations cases 
-health prevention immunization vaccine 
-infected cowpox rabies polio aids 
-infected infested trilobite sightings incidents cases 
-infected seeds viability eradication vaccine 
-aids searches signatures retractions cases 
-aids screening therapeutic vaccine 
-cases situations affecting preventing therapeutic vaccine 
+infection virus 
+infection allergy oncology health 
+infection infected 
+infection tuberculosis aids 
+infection asymptomatic cases 
+infection vaccine 
+virus brain human health 
+virus infected 
+virus tuberculosis aids 
+virus infections cases 
+virus vaccine 
+health long-term affected infected 
+health advocacy aids 
+health legal cases 
+health nih vaccine 
+infected septicemia asthma aids 
+infected asymptomatic cases 
+infected vaccinated vaccine 
+aids procedures cases 
+aids vaccine 
+cases infections vaccine 

@@ -1,45 +1,45 @@
-building visitor neighborhood city 
-building market seaport island 
-building edifice gild commodes venetian 
-building visitor neighborhood town 
-building twin-towered parterre pavillon roman 
-building edifice campanile ravello venice rome 
-building schoolhouse meetinghouse church 
-building civic summit triangle cities 
-building complex memorial history 
-city great continent island 
-city front glassed red-painted venetian 
+building neighborhood city 
+building seaport island 
+building colonial portuguese venetian 
+building neighborhood town 
+building parsonage presbyterian catholic roman 
+building rotunda colosseum rome 
+building parsonage church 
+building seaport cities 
+building museum history 
+city seaport island 
+city citadel moorish venetian 
 city town 
-city take keep holy roman 
-city bosenbach larino pienza ravenna rome 
-city front hour church 
-city take under cities 
-city town memorial history 
-island stone carving marquetry candelabras venetian 
-island battle born town 
-island battle christ holy roman 
-island sandwich dish bologna rome 
-island fort church 
-island battle born cities 
-island stone <br/_> history 
-venetian bentwood carpet lawn park town 
-venetian moorish byzantine roman 
-venetian genoese genoan spanish-portuguese thessalonika rome 
-venetian candelabras marquetry carving stone church 
-venetian candelabras candelabra ripples tiers cities 
-venetian candelabras globes globe world history 
-town village church catholic roman 
-town neighborhood tremé tenderloin bologna rome 
-town village church 
-town born cities 
-town memorial history 
-roman assyrian byzantium constantinople rome 
-roman catholic church 
-roman chansonnier voyageur crossings cities 
-roman catholic church memorial history 
-rome orvieto anagni curia synod church 
-rome bologna matzo craic tiers cities 
-rome bologna consommé beefsteak masquers firsts history 
-church london under cities 
-church memorial history 
-cities under years american history 
+city archdiocese roman 
+city god pantheon rome 
+city archdiocese church 
+city cities 
+city art history 
+island peninsula ligurian venetian 
+island seaport town 
+island socotra motu curia roman 
+island azores rota rome 
+island seaport hermitage church 
+island seaport cities 
+island continent civilisation history 
+venetian moorish fortress settlement town 
+venetian 16th-century 4th-century roman 
+venetian orvieto rome 
+venetian 16th-century cloister church 
+venetian flemish dutch-speaking enclaves cities 
+venetian renaissance twentieth-century history 
+town colonia castrum roman 
+town settlement necropolis pantheon rome 
+town parish church 
+town settlements cities 
+town city art history 
+roman curia avignon rome 
+roman archdiocese church 
+roman archdiocese metropolitan cities 
+roman catholicism religion history 
+rome pantheon basilica church 
+rome legate envoy embassies cities 
+rome pantheon lore history 
+church ministries embassies cities 
+church conception interpretation history 
+cities communities cultures history 

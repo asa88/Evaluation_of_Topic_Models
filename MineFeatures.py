@@ -30,8 +30,8 @@ class MineFeatures(object):
     classdocs
     '''
     
-    notFound=open('WordNotFound.txt','a') #file containing missing words
-    Feature_file=open('Features.txt','a')
+    notFound=open('WordNotFound.txt','w+') #file containing missing words
+   
     misses=0 # words in Graph/Total WOrds
    
     
@@ -309,6 +309,7 @@ class MineFeatures(object):
         
     
     def genFeatures(self,topicsObj,path):
+        Feature_file=open(os.getcwd()+path+'Features.txt','w+')
         count=1
         for line in topicsObj:
             self.misses=0
@@ -326,7 +327,7 @@ class MineFeatures(object):
             self.calc_SpanningFeatures(path,count)
             
             '''Plot Graphs'''
-            self.plot_graphs(path,count)
+            #self.plot_graphs(path,count)
             count+=1 
            
             
@@ -335,7 +336,7 @@ class MineFeatures(object):
             fea1= str(self.gS_avgMSTWeight) +' ' + str(self.gS_RatioC) + ' ' + str(self.gS_MaxDegreeM) + ' ' + str(self.gS_MaxDegreeC)+ ' ' +str(self.gS_AvgDegree) + ' ' + str(self.gS_Density)
             fea2=str(self.AvgSPlen)+' ' +str(self.MaxSPlen)+ ' '+str(self.NumSP1)+' '+ str(self.NumSP2)+' '+str(self.NumSP3)+' '+str(self.NumSP4)+' '+str(self.NumSP5)+' '+str(self.NumSPm)
             f=fea+' ' +fea1 + ' '+ fea2
-            self.Feature_file.write(f+'\n')
+            Feature_file.write(f+'\n')
            
             ''' CLEAR ALL FEATURE VARS'''
             self.clearVars()
@@ -343,7 +344,7 @@ class MineFeatures(object):
             
     
         print "Done writing"
-        self.Feature_file.close()
+        Feature_file.close()
        
         return
                 
@@ -359,12 +360,38 @@ class MineFeatures(object):
             
         
 ''' contains location of the graph'''
+
+'''OLD GRAPH'''
 '''
 Graph_path='/home/ankit/Dropbox/14-topics-semantics/en-network/en-network.labels.csv'
 GraphEdges_path='/home/ankit/Dropbox/14-topics-semantics/en-network/en-network.edges'
 '''
+
+'''En-10 GRAPH'''
+'''
+Graph_path='/home/ankit/Dropbox/14-topics-semantics/en-network/en_10-normed/en.labels'
+GraphEdges_path='/home/ankit/Dropbox/14-topics-semantics/en-network/en-10_normed/en-10_normed.edges'
+'''
+
+'''En-20 GRAPH'''
+'''
+Graph_path='/home/ankit/Dropbox/14-topics-semantics/en-network/en-20_normed/en.labels'
+GraphEdges_path='/home/ankit/Dropbox/14-topics-semantics/en-network/en-20_normed/en-20_normed.edges'
+'''
+
+
+'''En-40 GRAPH'''
+
+Graph_path='/home/ankit/Dropbox/14-topics-semantics/en-network/en-40_normed/en.labels'
+GraphEdges_path='/home/ankit/Dropbox/14-topics-semantics/en-network/en-40_normed/en-40_normed.edges'
+
+
+'''En-40_100k GRAPH'''
+'''
 Graph_path='/home/ankit/Dropbox/14-topics-semantics/en-network/en-100k/en-100k.labels'
 GraphEdges_path='/home/ankit/Dropbox/14-topics-semantics/en-network/en-100k/en-40_normed_100k.edges'
+'''
+
 
 f = open(Graph_path,'r')
 f1= open(GraphEdges_path,'r')
@@ -386,7 +413,7 @@ D5=open(data_path+'Newman-data/iabooks.topics.txt','r')
 
 book_path='/Data/iaBooks/graphs/'
 news_path='/Data/NYtimes/graphs/'
-#Data.genFeatures(D5,book_path)
+Data.genFeatures(D5,book_path)
 Data.genFeatures(D4,news_path)
 '''
 #Data.loadGraphEdgesTopicEdges(f1)

@@ -1,45 +1,45 @@
-grammar vocabulary neologisms phrases verb pronoun 
-grammar vocabulary neologisms phrases definite sentence 
-grammar vocabulary neologisms phrases 
-grammar vocabulary neologisms phrases verb adjective 
-grammar vocabulary neologisms phrases words meaning 
-grammar vocabulary neologisms phrases verb 
-grammar instruction practice speech 
-grammar language every shift phrase 
-grammar vocabulary idioms initials singular noun 
-pronoun verb phrases definite sentence 
-pronoun verb phrases 
-pronoun noun adjective 
-pronoun verb phrases words meaning 
+grammar inflection pronoun 
+grammar prepositions verb sentence 
+grammar pronunciations phrases 
+grammar prepositions adjective 
+grammar pronunciation meaning 
+grammar prepositions verb 
+grammar comprehension speech 
+grammar pronunciation phrase 
+grammar inflection noun 
+pronoun verb sentence 
+pronoun clauses phrases 
+pronoun adjective 
+pronoun adjective meaning 
 pronoun verb 
-pronoun noun singular proportions despotism manner speech 
-pronoun copula ellipsis proverb phrase 
+pronoun superlative politeness speech 
+pronoun phrase 
 pronoun noun 
-sentence definite phrases 
-sentence definite singular noun adjective 
-sentence unreasonable conclusion meaning 
-sentence definite phrases verb 
-sentence hearing speech 
-sentence conviction suits shift phrase 
-sentence definite singular noun 
-phrases verb adjective 
+sentence sentences phrases 
+sentence verb adjective 
+sentence meaning 
+sentence verb 
+sentence verbal speech 
+sentence verb phrase 
+sentence meaning noun 
+phrases inflected adjective 
 phrases words meaning 
 phrases verb 
-phrases definite sentence hearing speech 
-phrases words meaning phrase 
-phrases verb noun 
-adjective interjection archaism connoting meaning 
+phrases verbal speech 
+phrases phrase 
+phrases words noun 
+adjective meaning 
 adjective verb 
-adjective apostrophe hallucination mentality stereotype tokenism speech 
-adjective disambiguation isolate deciphering phrase 
+adjective utterance speech 
+adjective phrase 
 adjective noun 
-meaning words phrases verb 
-meaning signifying stereotype tokenism speech 
+meaning verb 
+meaning discourse speech 
 meaning phrase 
-meaning words phrases verb noun 
-verb phrases definite sentence hearing speech 
-verb phrases words meaning phrase 
+meaning noun 
+verb antecedent interpretation speech 
+verb phrase 
 verb noun 
-speech teacher master shift phrase 
-speech manner despotism proportions singular noun 
-phrase puns initials singular noun 
+speech theory phrase 
+speech politeness superlative noun 
+phrase noun 

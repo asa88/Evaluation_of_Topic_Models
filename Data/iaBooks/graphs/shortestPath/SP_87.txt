@@ -1,36 +1,36 @@
-head arm eye 
-head past future room 
-head read felt 
-head help good face 
-head safety hospital prison 
-head free secret prisoner 
-head son joy sorrowful resurrection 
-head help attempts tried asked 
-eye body money room 
-eye true hated felt 
-eye true face 
+head forehead eye 
+head quarters room 
+head forwards backwards felt 
+head torso face 
+head dept correction prison 
+head charge accused prisoner 
+head reins oath resurrection 
+head manager hired asked 
+eye living room 
+eye hand felt 
+eye hands face 
 eye asylum prison 
-eye shot dragon ghost prisoner 
-eye scar maze redemption resurrection 
-eye life wonders knowing asked 
-room money done heard felt 
-room money off face 
-room upstairs circus asylum prison 
-room money secret prisoner 
-room days judgement resurrection 
-room money paid requested asked 
-felt bright shade face 
-felt bright safety hospital prison 
-felt heard forgotten heroes prisoner 
-felt bright dark crypt resurrection 
-felt hated wanted asked 
-face scares incarcerated prison 
-face uldyssian haunt ghosts prisoner 
-face uldyssian triumphant resurrection 
-face uldyssian doomed hesitant asked 
-prison custody hostage prisoner 
-prison imprisonment sentence judgment resurrection 
-prison incarcerated scares calling asking asked 
-prisoner ghost redemption resurrection 
-prisoner heroes wonders knowing asked 
-resurrection judgement days wonders knowing asked 
+eye woman prisoner 
+eye asylum resurrection 
+eye stranger reluctant asked 
+room floor move felt 
+room clock face 
+room lodgings pillory prison 
+room situation phenomenon prisoner 
+room basement crypt resurrection 
+room cents chosen asked 
+felt blow face 
+felt embrace exile prison 
+felt love affair prisoner 
+felt looks sinners resurrection 
+felt saying asked 
+face murder sentenced prison 
+face woman prisoner 
+face impression epiphany resurrection 
+face genius reluctant asked 
+prison prisoner 
+prison asylum resurrection 
+prison sentenced tried asked 
+prisoner bride resurrection 
+prisoner traitor promised asked 
+resurrection promised asked 

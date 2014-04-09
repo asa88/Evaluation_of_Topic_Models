@@ -1,45 +1,45 @@
 throne king 
-throne oath tribunal court 
-throne prince queen majesty 
-throne veiled graveyard castle palace 
-throne king crown royal 
-throne prince queen 
-throne king crown 
-throne king princess 
+throne claimant appellant court 
+throne majesty 
+throne regent palace 
+throne regalia royal 
+throne queen 
+throne crown 
+throne queen princess 
 throne prince 
-king claimant privilege court 
-king queen majesty 
-king prince hotel hippodrome palace 
-king crown royal 
+king bench court 
+king majesty 
+king retinue palace 
+king royal 
 king queen 
 king crown 
 king princess 
 king prince 
-court supreme prerogative highnesses majesty 
-court stone sarcophagus tomb palace 
-court forces police royal 
-court nation irish queen 
-court supreme prerogative sovereign crown 
-court nation lady princess 
-court chief prince 
-majesty queen born fort citadel palace 
-majesty queen king crown royal 
+court bench majesty 
+court grand palace 
+court exchequer royal 
+court bench queen 
+court prosecution crown 
+court bench majesty princess 
+court appellant claimant prince 
+majesty regent palace 
+majesty regal royal 
 majesty queen 
-majesty queen king crown 
+majesty crown 
 majesty princess 
 majesty queen prince 
-palace ʻiolani viceregal royal 
-palace citadel fort born queen 
-palace ʻiolani viceregal royal crown 
-palace hippodrome hotel prince princess 
-palace hippodrome hotel prince 
-royal crown king queen 
+palace royal 
+palace regent queen 
+palace ducal crown 
+palace regent princess 
+palace retinue prince 
+royal sovereign queen 
 royal crown 
-royal crown king princess 
-royal crown king prince 
-queen king crown 
+royal crown princess 
+royal retinue prince 
+queen crown 
 queen princess 
 queen prince 
-crown king princess 
-crown king prince 
+crown princess 
+crown prince 
 princess prince 

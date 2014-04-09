@@ -1,45 +1,36 @@
 taylor russell 
-taylor southworth wallace 
-taylor foster wallace brinkley palin amanpour 
-taylor dowell hollingshead mann 
-taylor walker reed 
-taylor miller gardener gentleman friend 
-taylor miller collins 
-taylor cooke oldrid john 
-taylor miller griffin lion talk 
-russell baines wallace 
-russell blake tucker sommers norville amanpour 
-russell hooper mann 
-russell sheldon reed 
-russell lawson ward safety friend 
-russell boyd kersey collins 
-russell stuart erskine john 
-russell lawson ward safety talk 
-wallace brinkley palin amanpour 
-wallace foster hooper mann 
-wallace southworth walker reed 
-wallace smith michael revolution friend 
-wallace foran simms collins 
-wallace orville walter richard john 
-wallace smith michael safety talk 
-amanpour cnn news powerpc-based oss mann 
-amanpour norville sommers carlson reed 
-amanpour cnn headline press revolution friend 
-amanpour schlessinger silverman larson miller collins 
-amanpour norville smiley jack rev john 
-amanpour cnn headline show talk 
-mann gann steele reed 
-mann simon dragon alone friend 
-mann deforest pitts collins 
-mann arnold richard john 
-mann eva anna talk 
-reed price safety friend 
-reed anderson collins 
-reed steele page francis john 
-reed price safety talk 
-friend gentleman gardener miller collins 
-friend safety rev. john 
-friend safety talk 
-collins jones george john 
-collins miller griffin lion talk 
-john rev. safety talk 
+taylor wallace 
+taylor webb mann 
+taylor reed 
+taylor grant pardon friend 
+taylor collins 
+taylor wesley john 
+taylor grant pardon talk 
+russell wallace 
+russell mann 
+russell reed 
+russell ransom pardon friend 
+russell lewis collins 
+russell jerome john 
+russell ransom pardon talk 
+wallace webb mann 
+wallace smith reed 
+wallace grant pardon friend 
+wallace lewis collins 
+wallace brenton thomas john 
+wallace grant pardon talk 
+mann curtis reed 
+mann webb young friend 
+mann lewis collins 
+mann fleming donat john 
+mann webb grant pardon talk 
+reed comb eyes friend 
+reed thompson collins 
+reed harvey oswald john 
+reed handy good talk 
+friend eyes cheeks collins 
+friend biographer thomas john 
+friend pardon talk 
+collins marks paul john 
+collins silvers show talk 
+john 's be talk 

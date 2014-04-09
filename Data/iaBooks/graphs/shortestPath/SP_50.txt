@@ -1,45 +1,45 @@
 loom weaving 
-loom knitting crochet stitch thread 
-loom spinning jetting warp 
-loom looms machines machine 
-loom worsted cloth 
+loom lace thread 
+loom warp 
+loom machine 
+loom cloth 
 loom yarn 
-loom worsted fulling mill 
-loom worsted wool 
-loom grain cotton 
-weaving quilting bead thread 
-weaving loom dobby caster warp 
-weaving loom dobby cleaner machine 
-weaving yarn cloth 
+loom woolen mill 
+loom wool 
+loom woolen cotton 
+weaving silk thread 
+weaving yarn warp 
+weaving loom machine 
+weaving cloth 
 weaving yarn 
-weaving yarn milled lime mill 
-weaving loom worsted wool 
-weaving handloom coir cotton 
-thread crushing spiral monolith warp 
-thread balance chain machine 
-thread needle lamp cloth 
-thread needle lamp spinning yarn 
-thread needle lamp kiln mill 
-thread needle lamp cloth woolen wool 
-thread needle lamp cloth woolen cotton 
-warp infinity machines machine 
-warp datel gem cloth 
-warp jetting spinning yarn 
-warp wine lime mill 
-warp ribbit fuze silk wool 
-warp yui waste grain cotton 
-machine cleaner lamp cloth 
-machine machines looms yarn 
-machine factory distillery mill 
-machine chain meta silk wool 
-machine spirit rose cotton 
+weaving woolen mill 
+weaving wool 
+weaving cotton 
+thread warp 
+thread machine 
+thread cloth 
+thread yarn 
+thread silk mill 
+thread lace wool 
+thread silk cotton 
+warp capsule machine 
+warp stitch cloth 
+warp yarn 
+warp rough windy mill 
+warp yarn wool 
+warp yarn cotton 
+machine thread cloth 
+machine scrap yarn 
+machine factory mill 
+machine loom wool 
+machine pulp cotton 
 cloth yarn 
-cloth knitted tipple mill 
-cloth woolen wool 
-cloth woolen cotton 
-yarn milled lime mill 
-yarn worsted wool 
-yarn worsted woolen cotton 
-mill fulling worsted wool 
-mill foundry milling cotton 
+cloth woolen mill 
+cloth wool 
+cloth cotton 
+yarn woolen mill 
+yarn wool 
+yarn cotton 
+mill woolen wool 
+mill cotton 
 wool cotton 

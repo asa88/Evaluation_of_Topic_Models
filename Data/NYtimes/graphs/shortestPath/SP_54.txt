@@ -1,0 +1,45 @@
+patient therapist doctor 
+patient hospital 
+patient surgical medical 
+patient benefits cost 
+patient health 
+patient effectiveness coverage 
+patient medicare 
+patient long-term insurance 
+patient care 
+doctor hospital 
+doctor medical 
+doctor profession transformation cost 
+doctor clinic health 
+doctor citizen participant coverage 
+doctor medical health-care medicare 
+doctor clinic healthcare insurance 
+doctor clinic care 
+hospital medical 
+hospital patient benefits cost 
+hospital oncology health 
+hospital patient effectiveness coverage 
+hospital patient medicare 
+hospital healthcare insurance 
+hospital clinic care 
+medical specialists retention cost 
+medical health 
+medical technological global coverage 
+medical health-care medicare 
+medical malpractice insurance 
+medical care 
+cost employment health 
+cost net coverage 
+cost tax medicare 
+cost employee insurance 
+cost workplace care 
+health long-term current coverage 
+health health-care medicare 
+health improvement insurance 
+health care 
+coverage incentive tax medicare 
+coverage current long-term insurance 
+coverage insight aarp care 
+medicare insurance 
+medicare patient care 
+insurance trusts care 
